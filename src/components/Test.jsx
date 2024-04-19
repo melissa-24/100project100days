@@ -1,13 +1,20 @@
 
 
-const Test = () => {
+
+const Test = ({ projects }) => {
   
     return (
-      <div>
-        <h2>Project Details</h2>
-        <p>Project ID: </p>
-        <p>You can replace this content with actual project details.</p>
-      </div>
+      <>
+      {projects.map(( project ) => {
+        return(
+            <div id={ project.day } key={ project.day }>
+                <h2>Day: {project.day}</h2>
+                <h2>Project Title: {project.title}</h2>
+            </div>
+            
+        )
+      })}
+      </>
     );
   };
   
