@@ -1,8 +1,9 @@
 [
     {
         "day": "1",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": true,
+        "is_idea": true,
         "title": "Vite template",
         "description": "Basic Template to show case all the projects I plan to create over the next 100 days",
         "date_started": "April 18th, 2024",
@@ -11,7 +12,7 @@
     },
     {
         "day": "2",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -21,7 +22,7 @@
     },
     {
         "day": "3",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -31,7 +32,7 @@
     },
     {
         "day": "4",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -41,7 +42,7 @@
     },
     {
         "day": "5",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -51,7 +52,7 @@
     },
     {
         "day": "6",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -61,7 +62,7 @@
     },
     {
         "day": "7",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -71,7 +72,7 @@
     },
     {
         "day": "8",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -81,7 +82,7 @@
     },
     {
         "day": "9",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -91,7 +92,7 @@
     },
     {
         "day": "10",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -101,7 +102,7 @@
     },
     {
         "day": "11",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -111,7 +112,7 @@
     },
     {
         "day": "12",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -121,7 +122,7 @@
     },
     {
         "day": "13",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -131,7 +132,7 @@
     },
     {
         "day": "14",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -141,7 +142,7 @@
     },
     {
         "day": "15",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -151,7 +152,7 @@
     },
     {
         "day": "16",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -161,7 +162,7 @@
     },
     {
         "day": "17",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -171,7 +172,7 @@
     },
     {
         "day": "18",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -181,7 +182,7 @@
     },
     {
         "day": "19",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -191,7 +192,7 @@
     },
     {
         "day": "20",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -201,7 +202,7 @@
     },
     {
         "day": "21",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -211,7 +212,7 @@
     },
     {
         "day": "22",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -221,7 +222,7 @@
     },
     {
         "day": "23",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -231,7 +232,7 @@
     },
     {
         "day": "24",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -241,7 +242,7 @@
     },
     {
         "day": "25",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -251,7 +252,7 @@
     },
     {
         "day": "26",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -261,7 +262,7 @@
     },
     {
         "day": "27",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -271,7 +272,7 @@
     },
     {
         "day": "28",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -281,7 +282,7 @@
     },
     {
         "day": "29",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -291,7 +292,7 @@
     },
     {
         "day": "30",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -301,7 +302,7 @@
     },
     {
         "day": "31",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -311,7 +312,7 @@
     },
     {
         "day": "32",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -321,7 +322,7 @@
     },
     {
         "day": "33",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -331,7 +332,7 @@
     },
     {
         "day": "34",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -341,7 +342,7 @@
     },
     {
         "day": "35",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -351,7 +352,7 @@
     },
     {
         "day": "36",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -361,7 +362,7 @@
     },
     {
         "day": "37",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -371,7 +372,7 @@
     },
     {
         "day": "38",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -381,7 +382,7 @@
     },
     {
         "day": "39",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -391,7 +392,7 @@
     },
     {
         "day": "40",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -401,7 +402,7 @@
     },
     {
         "day": "41",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -411,7 +412,7 @@
     },
     {
         "day": "42",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -421,7 +422,7 @@
     },
     {
         "day": "43",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -431,7 +432,7 @@
     },
     {
         "day": "44",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -441,7 +442,7 @@
     },
     {
         "day": "45",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -451,7 +452,7 @@
     },
     {
         "day": "46",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -461,7 +462,7 @@
     },
     {
         "day": "47",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -471,7 +472,7 @@
     },
     {
         "day": "48",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -481,7 +482,7 @@
     },
     {
         "day": "49",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -491,7 +492,7 @@
     },
     {
         "day": "50",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -501,7 +502,7 @@
     },
     {
         "day": "51",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -511,7 +512,7 @@
     },
     {
         "day": "52",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -521,7 +522,7 @@
     },
     {
         "day": "53",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -531,7 +532,7 @@
     },
     {
         "day": "54",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -541,7 +542,7 @@
     },
     {
         "day": "55",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -551,7 +552,7 @@
     },
     {
         "day": "56",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -561,7 +562,7 @@
     },
     {
         "day": "57",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -571,7 +572,7 @@
     },
     {
         "day": "58",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -581,7 +582,7 @@
     },
     {
         "day": "59",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -591,7 +592,7 @@
     },
     {
         "day": "60",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -601,7 +602,7 @@
     },
     {
         "day": "61",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -611,7 +612,7 @@
     },
     {
         "day": "62",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -621,7 +622,7 @@
     },
     {
         "day": "63",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -631,7 +632,7 @@
     },
     {
         "day": "64",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -641,7 +642,7 @@
     },
     {
         "day": "65",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -651,7 +652,7 @@
     },
     {
         "day": "66",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -661,7 +662,7 @@
     },
     {
         "day": "67",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -671,7 +672,7 @@
     },
     {
         "day": "68",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -681,7 +682,7 @@
     },
     {
         "day": "69",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -691,7 +692,7 @@
     },
     {
         "day": "70",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -701,7 +702,7 @@
     },
     {
         "day": "71",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -711,7 +712,7 @@
     },
     {
         "day": "72",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -721,7 +722,7 @@
     },
     {
         "day": "73",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -731,7 +732,7 @@
     },
     {
         "day": "74",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -741,7 +742,7 @@
     },
     {
         "day": "75",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -751,7 +752,7 @@
     },
     {
         "day": "76",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -761,7 +762,7 @@
     },
     {
         "day": "77",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -771,7 +772,7 @@
     },
     {
         "day": "78",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -781,7 +782,7 @@
     },
     {
         "day": "79",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -791,7 +792,7 @@
     },
     {
         "day": "80",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -801,7 +802,7 @@
     },
     {
         "day": "81",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -811,7 +812,7 @@
     },
     {
         "day": "82",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -821,7 +822,7 @@
     },
     {
         "day": "83",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -831,7 +832,7 @@
     },
     {
         "day": "84",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -841,7 +842,7 @@
     },
     {
         "day": "85",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -851,7 +852,7 @@
     },
     {
         "day": "86",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -861,7 +862,7 @@
     },
     {
         "day": "87",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -871,7 +872,7 @@
     },
     {
         "day": "88",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -881,7 +882,7 @@
     },
     {
         "day": "89",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -891,7 +892,7 @@
     },
     {
         "day": "90",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -901,7 +902,7 @@
     },
     {
         "day": "91",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -911,7 +912,7 @@
     },
     {
         "day": "92",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -921,7 +922,7 @@
     },
     {
         "day": "93",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -931,7 +932,7 @@
     },
     {
         "day": "94",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -941,7 +942,7 @@
     },
     {
         "day": "95",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -951,7 +952,7 @@
     },
     {
         "day": "96",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -961,7 +962,7 @@
     },
     {
         "day": "97",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -971,7 +972,7 @@
     },
     {
         "day": "98",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -981,7 +982,7 @@
     },
     {
         "day": "99",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
@@ -991,7 +992,7 @@
     },
     {
         "day": "100",
-       "is_finished": false,
+        "is_finished": false,
         "is_started": false,
         "title": "",
         "description": "",
