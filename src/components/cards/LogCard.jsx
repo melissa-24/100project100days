@@ -1,15 +1,15 @@
 
 
 
-const LogCard = ({ theLogs }) => {
+const LogCard = ({ theData }) => {
 
   return (
     <>
-    <h2>Test</h2>
-    {theLogs.map(( aLog ) => {
+    {theData.map(( aLog ) => {
       return(
         <div id={ aLog.day } key={aLog.day}>
           <h2>Day: {aLog.day}</h2>
+          <p>{aLog.content}</p>
         </div>
       )
     })}

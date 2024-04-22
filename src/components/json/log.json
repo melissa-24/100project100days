@@ -1,32 +1,38 @@
 [
     {
         "day": "1",
+        "is_not_template": true,
         "date": "4/18/24",
-        "content": "Started Repo and Vite App and chose to try and do the 100 projects in 100 days, or at least code 100 days",
-        "is_not_template": true
+        "content": "Started Repo and Vite App and chose to try and do the 100 projects in 100 days, or at least code 100 days"
     },
     {
         "day": "2",
+        "is_not_template": true,
         "date": "4/19/24",
-        "content": "",
-        "is_not_template": true
+        "content": ""
     },
     {
         "day": "3",
+        "is_not_template": true,
         "date": "4/20/24",
-        "content": "",
-        "is_not_template": true
+        "content": ""
     },
     {
         "day": "4",
+        "is_not_template": true,
         "date": "4/21/24",
-        "content": "",
-        "is_not_template": true
+        "content": ""
+    },
+    {
+        "day": "5",
+        "is_not_template": true,
+        "date": "4/22/24",
+        "content": ""
     },
     {
         "day": "",
-        "date": "",
-        "content": "",
-        "is_not_template": false
+        "is_not_template": false,
+        "date": "//24",
+        "content": ""
     }
 ]
