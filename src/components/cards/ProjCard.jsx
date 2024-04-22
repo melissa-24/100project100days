@@ -7,8 +7,8 @@ const ProjCard = ({ projects }) => {
     <>
     {projects.map(( project ) => {
       return(
-          <div id={ project.day } key={ project.day }>
-              <h2>Project: {project.day}</h2>
+          <div id={ project.id } key={ project.id }>
+              <h2>Project: {project.id}</h2>
               <h2>Project Title: {project.title}</h2>
               <p>{project.description}</p>
           </div>

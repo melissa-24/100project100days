@@ -1,39 +1,40 @@
 [
     {
-        "day": "1",
+        "id": "1",
         "is_finished": false,
         "is_started": true,
         "is_idea": false,
         "title": "Vite template",
-        "description": "Basic Template to show case all the projects I plan to create over the next 100 days",
+        "description": "Basic Template to show case all the projects I plan to create over the next 100 ids",
         "date_started": "April 18th, 2024",
         "date_finished": "",
         "img_link": ""
     },
     {
-        "day": "2",
+        "id": "2",
         "is_finished": false,
-        "is_started": false,
-        "is_idea": true,
-        "title": "HTTP Status Pages",
-        "description": "Create unique status pages for the most common HTTP status codes",
-        "date_started": "",
+        "is_started": true,
+        "is_idea": false,
+        "title": "Daily Log",
+        "description": "Just a running log of what I am coding or working on for this over all project each day.",
+        "date_started": "April 18th, 2024",
         "date_finished": "",
         "img_link": ""
     },
     {
-        "day": "3",
-        "is_finished": false,
+        "id": "3",
+        "is_finished": true,
         "is_started": false,
         "is_idea": false,
-        "title": "",
-        "description": "",
-        "date_started": "",
-        "date_finished": "",
+        "title": "Background Changer",
+        "description": "Enter a hex code and watch the background color change",
+        "date_started": "April 22nd, 2024",
+        "date_finished": "April 22nd, 2024",
         "img_link": ""
     },
+    
     {
-        "day": "4",
+        "id": "4",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -44,7 +45,7 @@
         "img_link": ""
     },
     {
-        "day": "5",
+        "id": "5",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -55,7 +56,7 @@
         "img_link": ""
     },
     {
-        "day": "6",
+        "id": "6",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -66,7 +67,7 @@
         "img_link": ""
     },
     {
-        "day": "7",
+        "id": "7",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -77,7 +78,7 @@
         "img_link": ""
     },
     {
-        "day": "8",
+        "id": "8",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -88,7 +89,7 @@
         "img_link": ""
     },
     {
-        "day": "9",
+        "id": "9",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -99,7 +100,7 @@
         "img_link": ""
     },
     {
-        "day": "10",
+        "id": "10",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -110,7 +111,7 @@
         "img_link": ""
     },
     {
-        "day": "11",
+        "id": "11",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -121,7 +122,7 @@
         "img_link": ""
     },
     {
-        "day": "12",
+        "id": "12",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -132,7 +133,7 @@
         "img_link": ""
     },
     {
-        "day": "13",
+        "id": "13",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -143,7 +144,7 @@
         "img_link": ""
     },
     {
-        "day": "14",
+        "id": "14",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -154,7 +155,7 @@
         "img_link": ""
     },
     {
-        "day": "15",
+        "id": "15",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -165,7 +166,7 @@
         "img_link": ""
     },
     {
-        "day": "16",
+        "id": "16",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -176,7 +177,7 @@
         "img_link": ""
     },
     {
-        "day": "17",
+        "id": "17",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -187,7 +188,7 @@
         "img_link": ""
     },
     {
-        "day": "18",
+        "id": "18",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -198,7 +199,7 @@
         "img_link": ""
     },
     {
-        "day": "19",
+        "id": "19",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -209,7 +210,7 @@
         "img_link": ""
     },
     {
-        "day": "20",
+        "id": "20",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -220,7 +221,7 @@
         "img_link": ""
     },
     {
-        "day": "21",
+        "id": "21",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -231,7 +232,7 @@
         "img_link": ""
     },
     {
-        "day": "22",
+        "id": "22",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -242,7 +243,7 @@
         "img_link": ""
     },
     {
-        "day": "23",
+        "id": "23",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -253,7 +254,7 @@
         "img_link": ""
     },
     {
-        "day": "24",
+        "id": "24",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -264,7 +265,7 @@
         "img_link": ""
     },
     {
-        "day": "25",
+        "id": "25",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -275,7 +276,7 @@
         "img_link": ""
     },
     {
-        "day": "26",
+        "id": "26",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -286,7 +287,7 @@
         "img_link": ""
     },
     {
-        "day": "27",
+        "id": "27",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -297,7 +298,7 @@
         "img_link": ""
     },
     {
-        "day": "28",
+        "id": "28",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -308,7 +309,7 @@
         "img_link": ""
     },
     {
-        "day": "29",
+        "id": "29",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -319,7 +320,7 @@
         "img_link": ""
     },
     {
-        "day": "30",
+        "id": "30",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -330,7 +331,7 @@
         "img_link": ""
     },
     {
-        "day": "31",
+        "id": "31",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -341,7 +342,7 @@
         "img_link": ""
     },
     {
-        "day": "32",
+        "id": "32",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -352,7 +353,7 @@
         "img_link": ""
     },
     {
-        "day": "33",
+        "id": "33",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -363,7 +364,7 @@
         "img_link": ""
     },
     {
-        "day": "34",
+        "id": "34",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -374,7 +375,7 @@
         "img_link": ""
     },
     {
-        "day": "35",
+        "id": "35",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -385,7 +386,7 @@
         "img_link": ""
     },
     {
-        "day": "36",
+        "id": "36",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -396,7 +397,7 @@
         "img_link": ""
     },
     {
-        "day": "37",
+        "id": "37",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -407,7 +408,7 @@
         "img_link": ""
     },
     {
-        "day": "38",
+        "id": "38",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -418,7 +419,7 @@
         "img_link": ""
     },
     {
-        "day": "39",
+        "id": "39",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -429,7 +430,7 @@
         "img_link": ""
     },
     {
-        "day": "40",
+        "id": "40",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -440,7 +441,7 @@
         "img_link": ""
     },
     {
-        "day": "41",
+        "id": "41",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -451,7 +452,7 @@
         "img_link": ""
     },
     {
-        "day": "42",
+        "id": "42",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -462,7 +463,7 @@
         "img_link": ""
     },
     {
-        "day": "43",
+        "id": "43",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -473,7 +474,7 @@
         "img_link": ""
     },
     {
-        "day": "44",
+        "id": "44",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -484,7 +485,7 @@
         "img_link": ""
     },
     {
-        "day": "45",
+        "id": "45",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -495,7 +496,7 @@
         "img_link": ""
     },
     {
-        "day": "46",
+        "id": "46",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -506,7 +507,7 @@
         "img_link": ""
     },
     {
-        "day": "47",
+        "id": "47",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -517,7 +518,7 @@
         "img_link": ""
     },
     {
-        "day": "48",
+        "id": "48",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -528,7 +529,7 @@
         "img_link": ""
     },
     {
-        "day": "49",
+        "id": "49",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -539,7 +540,7 @@
         "img_link": ""
     },
     {
-        "day": "50",
+        "id": "50",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -550,7 +551,7 @@
         "img_link": ""
     },
     {
-        "day": "51",
+        "id": "51",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -561,7 +562,7 @@
         "img_link": ""
     },
     {
-        "day": "52",
+        "id": "52",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -572,7 +573,7 @@
         "img_link": ""
     },
     {
-        "day": "53",
+        "id": "53",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -583,7 +584,7 @@
         "img_link": ""
     },
     {
-        "day": "54",
+        "id": "54",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -594,7 +595,7 @@
         "img_link": ""
     },
     {
-        "day": "55",
+        "id": "55",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -605,7 +606,7 @@
         "img_link": ""
     },
     {
-        "day": "56",
+        "id": "56",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -616,7 +617,7 @@
         "img_link": ""
     },
     {
-        "day": "57",
+        "id": "57",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -627,7 +628,7 @@
         "img_link": ""
     },
     {
-        "day": "58",
+        "id": "58",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -638,7 +639,7 @@
         "img_link": ""
     },
     {
-        "day": "59",
+        "id": "59",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -649,7 +650,7 @@
         "img_link": ""
     },
     {
-        "day": "60",
+        "id": "60",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -660,7 +661,7 @@
         "img_link": ""
     },
     {
-        "day": "61",
+        "id": "61",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -671,7 +672,7 @@
         "img_link": ""
     },
     {
-        "day": "62",
+        "id": "62",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -682,7 +683,7 @@
         "img_link": ""
     },
     {
-        "day": "63",
+        "id": "63",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -693,7 +694,7 @@
         "img_link": ""
     },
     {
-        "day": "64",
+        "id": "64",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -704,7 +705,7 @@
         "img_link": ""
     },
     {
-        "day": "65",
+        "id": "65",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -715,7 +716,7 @@
         "img_link": ""
     },
     {
-        "day": "66",
+        "id": "66",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -726,7 +727,7 @@
         "img_link": ""
     },
     {
-        "day": "67",
+        "id": "67",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -737,7 +738,7 @@
         "img_link": ""
     },
     {
-        "day": "68",
+        "id": "68",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -748,7 +749,7 @@
         "img_link": ""
     },
     {
-        "day": "69",
+        "id": "69",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -759,7 +760,7 @@
         "img_link": ""
     },
     {
-        "day": "70",
+        "id": "70",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -770,7 +771,7 @@
         "img_link": ""
     },
     {
-        "day": "71",
+        "id": "71",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -781,7 +782,7 @@
         "img_link": ""
     },
     {
-        "day": "72",
+        "id": "72",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -792,7 +793,7 @@
         "img_link": ""
     },
     {
-        "day": "73",
+        "id": "73",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -803,7 +804,7 @@
         "img_link": ""
     },
     {
-        "day": "74",
+        "id": "74",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -814,7 +815,7 @@
         "img_link": ""
     },
     {
-        "day": "75",
+        "id": "75",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -825,7 +826,7 @@
         "img_link": ""
     },
     {
-        "day": "76",
+        "id": "76",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -836,7 +837,7 @@
         "img_link": ""
     },
     {
-        "day": "77",
+        "id": "77",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -847,7 +848,7 @@
         "img_link": ""
     },
     {
-        "day": "78",
+        "id": "78",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -858,7 +859,7 @@
         "img_link": ""
     },
     {
-        "day": "79",
+        "id": "79",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -869,7 +870,7 @@
         "img_link": ""
     },
     {
-        "day": "80",
+        "id": "80",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -880,7 +881,7 @@
         "img_link": ""
     },
     {
-        "day": "81",
+        "id": "81",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -891,7 +892,7 @@
         "img_link": ""
     },
     {
-        "day": "82",
+        "id": "82",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -902,7 +903,7 @@
         "img_link": ""
     },
     {
-        "day": "83",
+        "id": "83",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -913,7 +914,7 @@
         "img_link": ""
     },
     {
-        "day": "84",
+        "id": "84",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -924,7 +925,7 @@
         "img_link": ""
     },
     {
-        "day": "85",
+        "id": "85",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -935,7 +936,7 @@
         "img_link": ""
     },
     {
-        "day": "86",
+        "id": "86",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -946,7 +947,7 @@
         "img_link": ""
     },
     {
-        "day": "87",
+        "id": "87",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -957,7 +958,7 @@
         "img_link": ""
     },
     {
-        "day": "88",
+        "id": "88",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -968,7 +969,7 @@
         "img_link": ""
     },
     {
-        "day": "89",
+        "id": "89",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -979,7 +980,7 @@
         "img_link": ""
     },
     {
-        "day": "90",
+        "id": "90",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -990,7 +991,7 @@
         "img_link": ""
     },
     {
-        "day": "91",
+        "id": "91",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1001,7 +1002,7 @@
         "img_link": ""
     },
     {
-        "day": "92",
+        "id": "92",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1012,7 +1013,7 @@
         "img_link": ""
     },
     {
-        "day": "93",
+        "id": "93",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1023,7 +1024,7 @@
         "img_link": ""
     },
     {
-        "day": "94",
+        "id": "94",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1034,7 +1035,7 @@
         "img_link": ""
     },
     {
-        "day": "95",
+        "id": "95",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1045,7 +1046,7 @@
         "img_link": ""
     },
     {
-        "day": "96",
+        "id": "96",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1056,7 +1057,7 @@
         "img_link": ""
     },
     {
-        "day": "97",
+        "id": "97",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1067,7 +1068,7 @@
         "img_link": ""
     },
     {
-        "day": "98",
+        "id": "98",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1078,7 +1079,7 @@
         "img_link": ""
     },
     {
-        "day": "99",
+        "id": "99",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
@@ -1089,7 +1090,7 @@
         "img_link": ""
     },
     {
-        "day": "100",
+        "id": "100",
         "is_finished": false,
         "is_started": false,
         "is_idea": false,
