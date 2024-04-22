@@ -1,5 +1,7 @@
-import projects from "./json/projects.json"
-import Proj from './ProjCard';
+import projects from "../json/projects.json"
+import Proj from '../cards/ProjCard';
+import logData from "../json/log.json"
+import TheLogs from '../cards/LogCard';
 
 
 const Home = () => {
@@ -7,6 +9,7 @@ const Home = () => {
     const completed_projects = projects.filter(project => project.is_finished)
     const started_projects = projects.filter(project => project.is_started)
     const coming_projects = projects.filter(project => project.is_idea)
+    const completed_logs = projects.filter(log => log.is_not_template)
 
 
     return (
@@ -39,6 +42,16 @@ const Home = () => {
                 :
                 <div>
                     <Proj projects={coming_projects} />
+                </div>
+            }
+            <h2>Logs</h2>
+            {completed_logs.length == 0 ?
+                <div>
+                    <h3>No logs created yet</h3>
+                </div>
+                :
+                <div>
+                    <TheLogs projects={completed_logs} />
                 </div>
             }
         </>

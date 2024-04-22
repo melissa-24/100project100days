@@ -1,7 +1,32 @@
 [
     {
         "day": "1",
+        "date": "4/18/24",
+        "content": "Started Repo and Vite App and chose to try and do the 100 projects in 100 days, or at least code 100 days",
+        "is_not_template": true
+    },
+    {
+        "day": "2",
+        "date": "4/19/24",
+        "content": "",
+        "is_not_template": true
+    },
+    {
+        "day": "3",
+        "date": "4/20/24",
+        "content": "",
+        "is_not_template": true
+    },
+    {
+        "day": "4",
+        "date": "4/21/24",
+        "content": "",
+        "is_not_template": true
+    },
+    {
+        "day": "",
         "date": "",
-        "content": ""
+        "content": "",
+        "is_not_template": false
     }
 ]

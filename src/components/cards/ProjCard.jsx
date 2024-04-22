@@ -1,7 +1,7 @@
 
 
 
-const Test = ({ projects }) => {
+const ProjCard = ({ projects }) => {
   
   return (
     <>
@@ -18,5 +18,5 @@ const Test = ({ projects }) => {
   );
 };
 
-export default Test;
+export default ProjCard;
 

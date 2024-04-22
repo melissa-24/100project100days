@@ -1,7 +1,8 @@
 import {Routes, Route} from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './components/Home'
+import Home from './components/views/Home'
+import Logs from './components/views/Log'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/logs" element={<Logs />} />
         </Routes>
       </main>
       <Footer />
