@@ -1,6 +1,5 @@
 import projects from "../json/projects.json"
-// import Proj from '../cards/ProjCard';
-import FrameworkCard from "../cards/FrameworkCard"
+import FrameworkCard from "../components/cards/FrameworkCard"
 
 
 const Home = () => {

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import ProjectThree from './projects/BackgroundChanger'
+import ProjectFour from './projects/ImportantDates'
 
 const ProjectPageOne = () => {
 
@@ -13,6 +14,8 @@ const ProjectPageOne = () => {
         <Link to="/logs">Logs</Link>
         <h2>Project #3</h2>
         <ProjectThree />
+        <h2>Project #4</h2>
+        <ProjectFour />
         </>
     )
 }

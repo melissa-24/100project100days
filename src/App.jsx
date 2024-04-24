@@ -2,10 +2,9 @@ import {Routes, Route} from 'react-router-dom'
 import './static/css/style.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './components/views/Home'
-import Logs from './components/views/Log'
-
-import PageOne from './components/views/ProjectPageOne'
+import Home from './views/Home'
+import Logs from './views/Log'
+import PageOne from './views/ProjectPageOne'
 
 
 function App() {

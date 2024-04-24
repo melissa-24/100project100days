@@ -1,5 +1,5 @@
 import logData from "../json/log.json"
-import TheLogs from '../cards/LogCard';
+import TheLogs from '../components/cards/LogCard';
 
 
 const Logs = () => {
