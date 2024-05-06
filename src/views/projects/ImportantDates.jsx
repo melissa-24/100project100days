@@ -3,9 +3,18 @@ import theDates from '../../json/dates.json'
 
 const ImportantDates = () => {
 
+
     const today = getDate()
     console.log("today ln6 ImportantDates.jsx", today)
     const current_time = getTime()
+    const eventProjects = theDates.filter(date => date.category === "Event");
+
+    eventProjects.forEach(date => {
+        console.log(date)
+        const eventDate = date.date
+        const diff = getDaysDifference(eventDate, today)
+        console.log(diff)
+    })
 
     return (
         <>

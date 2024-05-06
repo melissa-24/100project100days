@@ -1,5 +1,6 @@
 import projects from "../json/projects.json"
-import FrameworkCard from "../components/cards/FrameworkCard"
+// import FrameworkCard from "../components/cards/FrameworkCard"
+import ProjCard from "../components/cards/ProjCard"
 
 
 const Home = () => {
@@ -16,78 +17,9 @@ const Home = () => {
 
     return (
         <>
-        <table className="homeTable">
-            <tr>
-                <th colSpan={2}>Projects Started</th>
-            </tr>
-            {started_projects.length == 0 ?
-            <tr>
-                <td colSpan={2}>No projects started yet</td>
-            </tr>
-            :
-            <tr>
-                <td># Started</td>
-                <td>{ started_length }</td>
-            </tr>
-            }
-        </table>
-        <table className="homeTable">
-            <tr>
-                <th colSpan={2}>Projects Finished</th>
-            </tr>
-            {completed_projects.length == 0 ?
-            <tr>
-                <td colSpan={2}>No projects finished yet</td>
-            </tr>
-            :
-            <tr>
-                <td># Finished</td>
-                <td>{ done_length }</td>
-            </tr>
-            }
-        </table>
-        <table className="homeTable">
-            <tr>
-                <th colSpan={2}>Project Planned</th>
-            </tr>
-            {coming_projects.length == 0 ?
-            <tr>
-                <td colSpan={2}>No projects planned yet</td>
-            </tr>
-            :
-            <tr>
-                <td># Planned</td>
-                <td>{ coming_length }</td>
-            </tr>
-            }
-        </table>
-        <table className="homeTable">
-            <tr>
-                <th colSpan={2}>Projects with External Links</th>
-            </tr>
-            {external_projects.length == 0 ?
-            <tr>
-                <td colSpan={2}>No projects outside of this App yet</td>
-            </tr>
-            :
-            <tr>
-                <td># Created External to App</td>
-                <td>{ external_length }</td>
-            </tr>
-            }
-        </table>
-        <table className="homeTable">
-            <tr>
-                <th colSpan={3}>Frameworks used</th>
-            </tr>
-            {project_frameworks.length == 0 ?
-            <tr>
-                <td colSpan={3}>No frameworks decided yet</td>
-            </tr>
-            :
-            <FrameworkCard projects={project_frameworks} />
-            }
-        </table>
+            <ProjCard title={"Completed Projects"} projects={completed_projects} />
+            <ProjCard title={"Projects Started"} projects={started_projects} />
+            <ProjCard title={"Project Ideas"} projects={coming_projects} />
         </>
     )
 }

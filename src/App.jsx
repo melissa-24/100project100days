@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import Home from './views/Home'
 import Logs from './views/Log'
 import PageOne from './views/ProjectPageOne'
+import BackgroundChanger from './views/projects/BackgroundChanger'
+import ImportantDates from './views/projects/ImportantDates'
 
 
 function App() {
@@ -17,7 +19,10 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/logs" element={<Logs />} />
-          <Route path="/project_page_one" element={<PageOne />} />
+          {/* <Route path="/project_page_one" element={<PageOne />} /> */}
+          <Route path="projects/2" element={<Logs />} />
+          <Route path="/projects/3" element={<BackgroundChanger />} />
+          <Route path="/projects/7" element={<ImportantDates />} />
         </Routes>
       </main>
       <Footer />
