@@ -8,7 +8,7 @@
         "category": "Birthday",
         "name": "Debby Payne",
         "couple": "",
-        "title": "",
+        "title": "Debby was born",
         "description": ""
     },
     {
@@ -20,7 +20,7 @@
         "category": "Birthday",
         "name": "Ken Payne SR",
         "couple": "",
-        "title": "",
+        "title": "Ken was born",
         "description": ""
     },
     {
@@ -32,7 +32,7 @@
         "category": "Birthday",
         "name": "Tammi Longenberger",
         "couple": "",
-        "title": "",
+        "title": "Tammi was born",
         "description": ""
     },
     {
@@ -44,7 +44,7 @@
         "category": "Birthday",
         "name": "Richard Longenberger",
         "couple": "",
-        "title": "",
+        "title": "Richard was born",
         "description": ""
     },
     {
@@ -56,7 +56,7 @@
         "category": "Birthday",
         "name": "Melissa Longenberger",
         "couple": "",
-        "title": "",
+        "title": "Melissa was born",
         "description": ""
     },
     {
@@ -68,7 +68,7 @@
         "category": "Birthday",
         "name": "Nicholas Longenberger",
         "couple": "",
-        "title": "",
+        "title": "Nicholas was born",
         "description": ""
     },
     {
@@ -80,7 +80,7 @@
         "category": "Birthday",
         "name": "Shannon O'Neil",
         "couple": "",
-        "title": "",
+        "title": "Shannon was born",
         "description": ""
     },
     {
@@ -92,7 +92,7 @@
         "category": "Birthday",
         "name": "Aiden O'Neil",
         "couple": "",
-        "title": "",
+        "title": "Aiden was born",
         "description": ""
     },
     {
@@ -104,7 +104,7 @@
         "category": "Birthday",
         "name": "Hayden Longenberger",
         "couple": "",
-        "title": "",
+        "title": "Hayden was born ",
         "description": ""
     },
     {
@@ -116,7 +116,7 @@
         "category": "Anniversary",
         "name": "",
         "couple": "Ken & Debby Payne",
-        "title": "",
+        "title": "Ken & Debby were married",
         "description": ""
     },
     {
@@ -128,7 +128,7 @@
         "category": "Anniversary",
         "name": "",
         "couple": "Richard & Tammi Longenberger",
-        "title": "",
+        "title": "Richard & Tammi were married",
         "description": ""
     },
     {
@@ -140,7 +140,7 @@
         "category": "Anniversary",
         "name": "",
         "couple": "Nicholas & Melissa Longenberger",
-        "title": "",
+        "title": "Nick and Melissa were married",
         "description": ""
     },
     {
@@ -152,7 +152,7 @@
         "category": "Event",
         "name": "Melissa Longenberger",
         "couple": "",
-        "title": "Joined the Navy",
+        "title": "Melissa Joined the Navy",
         "description": ""
     },
     {
@@ -164,19 +164,7 @@
         "category": "Event",
         "name": "Melissa Longenberger",
         "couple": "",
-        "title": "Last Day of Active Duty",
-        "description": ""
-    },
-    {
-        "id": "",
-        "date": "",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Event",
-        "name": "",
-        "couple": "",
-        "title": "",
+        "title": "Melissa's Last Day of Active Duty",
         "description": ""
     },
     {
@@ -188,43 +176,7 @@
         "category": "Graduation",
         "name": "Shannon O'Neil",
         "couple": "",
-        "title": "Graduated High School",
-        "description": ""
-    },
-    {
-        "id": "",
-        "date": "",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Graduation",
-        "name": "",
-        "couple": "",
-        "title": "",
-        "description": ""
-    },
-    {
-        "id": "",
-        "date": "",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Graduation",
-        "name": "",
-        "couple": "",
-        "title": "",
-        "description": ""
-    },
-    {
-        "id": "",
-        "date": "",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Graduation",
-        "name": "",
-        "couple": "",
-        "title": "",
+        "title": "Shannon Graduated High School",
         "description": ""
     },
     {
@@ -236,7 +188,7 @@
         "category": "Event",
         "name": "",
         "couple": "",
-        "title": "Project Start Date",
+        "title": "100 Projects in 100 Days - Project Start Date",
         "description": "The Start of the 100 Projects in 100 days project"
     }
 ]

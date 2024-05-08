@@ -11,11 +11,15 @@ export const getTime = () => {
 }
 
 export const getDaysDifference = (start, end) => {
-    const diff = end.getTime() - start.getTime()
+    const currentDate = new Date(end)
+    const eventDate = new Date(start)
+    const diff = currentDate - eventDate
+    console.log('the diff', diff)
     const result = Math.floor(diff / (1000 * 60 * 60 * 24))
     console.log('diff line 14 helper.js', diff, 'result line 15 helper.js', result)
     return result
 }
+
 
 export const getYearsDifference = (start, end) => {
     const diff = end.getTime() - start.getTime()
