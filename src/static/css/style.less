@@ -2,50 +2,51 @@
 
 body {
     .flexcolumn();
-    background-color: @violet;
-    color: @black;
-    width: 95%;
-    text-align: center;
+    width: 99%;
+    background-color: @bg;
+    background-image: url("src/static/imgs/hexellence.png");
+    color: @yellow;
 
-    header {
+    #root {
         .flexcolumn();
-        width: 95%;
-        border: @black 3px groove;
+        width: 85%;
 
-        nav {
-            .flexrow();
-            width: 100%;
-            justify-content: space-evenly;
-        }
-    }
-    main {
-        .flexcolumn();
-        width: 95%;
-        border: @black 3px groove;
-
-        .projects {
-            .flexrow();
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-
-            .proj_box {
-                border: 2px double @yellow;
-                width: 200px;
-                height: 200px;
-                margin: .5em;
+        header {
+            .flexcolumn();
+            width: 95%;
+    
+            nav {
+                .flexrow();
+                justify-content: space-evenly;
+                width: 100%;
             }
         }
-
-        #bg_changer {
-            width: 400px;
-            height: 400px;
+        main {
+            .flexcolumn();
+            width: 95%;
+    
+            .projects {
+                .flexrow();
+                flex-wrap: wrap;
+                
+    
+                .proj_box {
+                    width: 200px;
+                    height: 200px;
+                    margin: .5em;
+                }
+            }
+    
+            #bg_changer {
+                width: 400px;
+                height: 400px;
+            }
+    
         }
-
-    }
-    footer {
-        .flexcolumn();
-        width: 95%;
-        border: @black 3px groove;
+        footer {
+            .flexcolumn();
+            width: 95%;        
+        }
     }
 }
 

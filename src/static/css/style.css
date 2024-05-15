@@ -10,63 +10,68 @@
   justify-content: center;
   align-items: center;
 }
+a {
+  color: #ffff00;
+}
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ee82ee;
-  color: #000000;
-  width: 95%;
-  text-align: center;
+  width: 99%;
+  background-color: #1c1700;
+  background-image: url("src/static/imgs/hexellence.png");
+  color: #ffff00;
 }
-body header {
+body #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+body #root header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 95%;
-  border: #000000 3px groove;
 }
-body header nav {
+body #root header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
-  justify-content: space-evenly;
 }
-body main {
+body #root main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 95%;
-  border: #000000 3px groove;
 }
-body main .projects {
+body #root main .projects {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
-body main .projects .proj_box {
-  border: 2px double #ffff00;
+body #root main .projects .proj_box {
   width: 200px;
   height: 200px;
   margin: 0.5em;
 }
-body main #bg_changer {
+body #root main #bg_changer {
   width: 400px;
   height: 400px;
 }
-body footer {
+body #root footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 95%;
-  border: #000000 3px groove;
 }
