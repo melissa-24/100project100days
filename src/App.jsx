@@ -1,6 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
+import backgroundImage from './assets/hexellence.png'
 import './styles/style.css'
-import backgroundImage './assets/hexellence.png'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './views/Home'
