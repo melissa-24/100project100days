@@ -20,7 +20,7 @@ body {
   align-items: center;
   width: 99%;
   background-color: #1c1700;
-  background-image: url("src/static/imgs/hexellence.png");
+  background-image: url("assets/hexellence.png");
   color: #ffff00;
 }
 body #root {
