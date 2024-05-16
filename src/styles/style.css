@@ -20,6 +20,7 @@ body {
   align-items: center;
   width: 99%;
   background-color: #1c1700;
+  background: linear-gradient(49deg, #1c1700 20%, #787c21 50%, #1c1700 80%);
   color: #ffff00;
 }
 body #root {
