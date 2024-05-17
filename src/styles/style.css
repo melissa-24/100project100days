@@ -52,6 +52,29 @@ body #root main {
   align-items: center;
   width: 95%;
 }
+body #root main .challCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body #root main .challCard .challs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body #root main .challCard .challs .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
 body #root main .projects {
   display: flex;
   flex-direction: row;

@@ -242,18 +242,18 @@
     {
         "id": "16",
         "is_finished": false,
-        "is_started": false,
+        "is_started": true,
         "is_idea": false,
-        "is_external": false,
+        "is_external": true,
         "framework_chosen": false,
-        "is_showable": false,
-        "title": "",
-        "description": "",
-        "date_started": "",
+        "is_showable": true,
+        "title": "Code Challenges",
+        "description": "A Tally of Code Challenges that I have done JavaScript VS Python VS Java and CodeWars VS HackerRank VS LeetCode VS Misc",
+        "date_started": "May 16th, 2024",
         "date_finished": "",
         "img_link": "",
         "framework_used": "",
-        "external_link": ""
+        "external_link": "https://github.com/melissa-24/codeChallenges"
     },
     {
         "id": "17",

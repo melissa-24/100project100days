@@ -1,4 +1,4 @@
-import { getDate, getTime, getDaysDifference, getYearsDifference } from "../../../utils/Helper"
+import { getDate, getTime, getDaysDifference, getYearsDifference } from "../../../utils/TimeHelpers"
 import theDates from '../../../json/dates.json'
 import { useState, useEffect } from "react"
 

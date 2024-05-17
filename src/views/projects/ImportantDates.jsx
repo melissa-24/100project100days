@@ -1,5 +1,5 @@
 import DaysCard from "../../components/cards/dateProjectCards/daysCard"
-import { getTime } from "../../utils/Helper"
+import { getTime } from "../../utils/TimeHelpers"
 
 const ImportantDates = () => {
     const current_time = getTime()

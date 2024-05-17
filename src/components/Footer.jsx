@@ -1,4 +1,4 @@
-import { getDate } from "../utils/Helper"
+import { getDate } from "../utils/TimeHelpers"
 
 const Footer = () => {
     const today = getDate()
