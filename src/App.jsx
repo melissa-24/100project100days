@@ -9,6 +9,7 @@ import PageOne from './views/ProjectPageOne'
 import BackgroundChanger from './views/projects/BackgroundChanger'
 import ImportantDates from './views/projects/ImportantDates'
 import Challenges from './views/projects/Challenges'
+import CssImage from './views/projects/CssImage'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/projects/3" element={<BackgroundChanger />} />
           <Route path="/projects/7" element={<ImportantDates />} />
           <Route path="/projects/16" element={<Challenges />} />
+          <Route path="/projects/17" element={< CssImage />} />
         </Routes>
       </main>
       <Footer />

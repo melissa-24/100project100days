@@ -1,0 +1,41 @@
+@import './base/base.less';
+
+
+body {
+    #root {
+        main {
+            .imageBox {
+                display: block;
+                background-color: @black;
+                height: 600px;
+                width: 100%;
+
+                .hiveRow {
+                    .flexrow();
+                    width: 95%;
+                    justify-content: space-evenly;
+                    margin: 1em;
+            
+                    .theHive {
+                        .flexcolumn();
+            
+                        div {
+                            .transparent {
+                                color: white;
+                            }
+                            .hive {
+                                background-color: yellow;
+                                border-radius: 40%;
+                                color: #ffd00094;
+                            }
+                            .bottom {
+                                box-shadow: #ffd00094 0px 4px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

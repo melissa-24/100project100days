@@ -43,19 +43,19 @@
     },
     {
         "day": "19",
-        "is_not_template": false,
+        "is_not_template": true,
         "date": "5/7/24",
         "content": "Finally getting back into the project for real again."
     },
     {
         "day": "20",
-        "is_not_template": false,
+        "is_not_template": true,
         "date": "5/8/24",
         "content": "Finished 1 project, the important dates.... although I am thinking I might make adjustments, I certainly need to make some CSS adjustments for sure. I also came up with (with a suggestion from a fellow developer) 2 more project ideas."
     },
     {
         "day": "26",
-        "is_not_template": false,
+        "is_not_template": true,
         "date": "5/14/24",
         "content": "Today was just a CSS day.  I didn't do much just cleaned some of it up."
     }
