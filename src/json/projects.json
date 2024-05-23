@@ -66,18 +66,18 @@
     {
         "id": "5",
         "is_finished": false,
-        "is_started": false,
+        "is_started": true,
         "is_idea": true,
         "is_external": false,
-        "framework_chosen": false,
-        "is_showable": false,
+        "framework_chosen": true,
+        "is_showable": true,
         "title": "Images API",
         "description": "A database/api of images/stickers that can be used for any reason",
-        "date_started": "",
+        "date_started": "5/22/24",
         "date_finished": "",
         "img_link": "",
-        "framework_used": "",
-        "external_link": ""
+        "framework_used": "Django",
+        "external_link": "https://ninja-api.navyladyveteran.com/api/images/"
     },
     {
         "id": "6",
