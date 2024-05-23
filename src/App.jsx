@@ -27,9 +27,9 @@ function App() {
           <Route path="projects/2" element={<Logs />} />
           <Route path="/projects/3" element={<BackgroundChanger />} />
           <Route path="/projects/5" element={<ImagesApi />} />
-          <Route path="/projects/7" element={<ImportantDates />} />
-          <Route path="/projects/16" element={<Challenges />} />
-          <Route path="/projects/17" element={< CssImage />} />
+          <Route path="/projects/9" element={<ImportantDates />} />
+          <Route path="/projects/18" element={<Challenges />} />
+          <Route path="/projects/19" element={< CssImage />} />
         </Routes>
       </main>
       <Footer />
