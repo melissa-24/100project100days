@@ -10,3 +10,6 @@ export const is_length = (data) => {
     return data.length
 }
 
+export const filtered_length = (data, theLang) => {
+    return data.filter(d => d.languageSolved === theLang).length
+}

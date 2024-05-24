@@ -7,9 +7,11 @@ const Number = styled.span`
   color: ${(props) => (props.isHigher ? 'green' : 'red')};
 `;
 
-const ChallengesVSCard = ({one, two, countOne, countTwo}) => {
+const ChallengesVSCard = ({one, two, three, countOne, countTwo, countThree}) => {
 
-    console.log('params', one, two, countOne, countTwo)
+    console.log('params', one, two, three, countOne, countTwo, countThree)
+    const countFour = countOne + countTwo
+    const four = `${one} & ${two}`
 
     return (
         <>
@@ -21,6 +23,15 @@ const ChallengesVSCard = ({one, two, countOne, countTwo}) => {
                 <span> VS </span>
                 <Number isHigher={countTwo > countOne}>
                     {countTwo}
+                </Number></h3>
+                <h2>{ four } VS { three }</h2>
+            <h3>
+                <Number isHigher={countFour > countThree}>
+                    {countFour}
+                </Number> 
+                <span> VS </span>
+                <Number isHigher={countThree > countFour}>
+                    {countThree}
                 </Number></h3>
         </>
     )
