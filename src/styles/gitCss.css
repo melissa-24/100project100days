@@ -1,0 +1,15 @@
+.commit-graph {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .commit-day {
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    background-color: #ebedf0; /* inactive color */
+  }
+  
+  .commit-day.active {
+    background-color: green; /* active color */
+  }

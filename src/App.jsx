@@ -11,6 +11,7 @@ import ImportantDates from './views/projects/ImportantDates'
 import Challenges from './views/projects/Challenges'
 import CssImage from './views/projects/CssImage'
 import ImagesApi from './views/projects/ImagesApi'
+import GitCommitGraph from './views/projects/GitCommitGraph'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/projects/9" element={<ImportantDates />} />
           <Route path="/projects/18" element={<Challenges />} />
           <Route path="/projects/19" element={< CssImage />} />
+          <Route path="/projects/20" element={< GitCommitGraph />} />
         </Routes>
       </main>
       <Footer />
