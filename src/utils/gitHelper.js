@@ -4,7 +4,7 @@ const accounts = {
   'melissa-24': import.meta.env.VITE_GITHUB_TOKEN_USER1,
   'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
   'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
-  'melissa-techByte': import.meta.env.VITE_GITHUB_TOKEN_USER4,
+  // 'melissa-techByte': import.meta.env.VITE_GITHUB_TOKEN_USER4,
   'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
 };
 
@@ -29,11 +29,32 @@ const fetchUserOrgs = async (username, token) => {
   return response.data.map(org => org.login);
 };
 
+// const fetchCommits = async (owner, repo, token, usernames) => {
+//   const url = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=100`;
+//   const headers = { 'Authorization': `token ${token}` };
+//   let page = 1;
+//   let commitDates = [];
+
+//   while (true) {
+//     const response = await axios.get(`${url}&page=${page}`, { headers });
+//     if (response.data.length === 0) break;
+
+//     // Filter commits by author
+//     const filteredCommits = response.data.filter(commit => {
+//       return commit.author && usernames.includes(commit.author.login);
+//     });
+
+//     commitDates = commitDates.concat(filteredCommits.map(commit => commit.commit.author.date.slice(0, 10)));
+//     page++;
+//   }
+
+//   return commitDates;
+// };
 const fetchCommits = async (owner, repo, token, usernames) => {
   const url = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=100`;
   const headers = { 'Authorization': `token ${token}` };
   let page = 1;
-  let commitDates = [];
+  let commitData = {};
 
   while (true) {
     const response = await axios.get(`${url}&page=${page}`, { headers });
@@ -44,12 +65,22 @@ const fetchCommits = async (owner, repo, token, usernames) => {
       return commit.author && usernames.includes(commit.author.login);
     });
 
-    commitDates = commitDates.concat(filteredCommits.map(commit => commit.commit.author.date.slice(0, 10)));
+    // Process commits
+    filteredCommits.forEach(commit => {
+      const commitDate = new Date(commit.commit.author.date);
+      const monthYear = `${commitDate.toLocaleString('default', { month: 'long' })} ${commitDate.getFullYear()}`;
+      if (!commitData[monthYear]) {
+        commitData[monthYear] = 0;
+      }
+      commitData[monthYear]++;
+    });
+
     page++;
   }
 
-  return commitDates;
+  return commitData;
 };
+
 
 const fetchAllCommitDates = async () => {
   let allCommitDates = [];
@@ -60,22 +91,27 @@ const fetchAllCommitDates = async () => {
 
     // Fetch user repositories
     const userRepos = await fetchRepositories(username, token);
-    console.log(`User Repos for ${username}:`, userRepos);
+    // console.log(`User Repos for ${username}:`, userRepos);
+    console.log(`User Repos for ${username}: fetched`)
     for (let repo of userRepos) {
       const commitDates = await fetchCommits(repo.owner, repo.name, token, usernames);
-      console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
+      // console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
+      console.log(`Commits for ${repo.owner}/${repo.name}: fetched`)
       allCommitDates = allCommitDates.concat(commitDates);
     }
 
     // Fetch organization repositories
     const orgs = await fetchUserOrgs(username, token);
-    console.log(`Orgs for ${username}:`, orgs);
+    // console.log(`Orgs for ${username}:`, orgs);
+    console.log(`Orgs for ${username}: fetched`)
     for (let org of orgs) {
       const orgRepos = await fetchOrgRepositories(org, token);
-      console.log(`Org Repos for ${org}:`, orgRepos);
+      // console.log(`Org Repos for ${org}:`, orgRepos);
+      console.log(`Org Repos for ${org}: fetched`)
       for (let repo of orgRepos) {
         const commitDates = await fetchCommits(repo.owner, repo.name, token, usernames);
-        console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
+        // console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
+        console.log(`Commits for ${repo.owner}/${repo.name}: fetched`)
         allCommitDates = allCommitDates.concat(commitDates);
       }
     }
