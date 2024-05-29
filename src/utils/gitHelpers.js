@@ -2,9 +2,9 @@ import axios from 'axios'
 
 const accounts = {
     'melissa-24': import.meta.env.VITE_GITHUB_TOKEN_USER1,
-    // 'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
-    // 'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
-    // 'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
+    'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
+    'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
+    'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
 }
 
 // get repos from user
