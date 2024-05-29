@@ -12,6 +12,7 @@ const fetchRepositories = async (username, token) => {
   const url = `https://api.github.com/users/${username}/repos`;
   const headers = { 'Authorization': `token ${token}` };
   const response = await axios.get(url, { headers });
+  console.log("fetchRepos res", response)
   return response.data.map(repo => ({ owner: username, name: repo.name }));
 };
 
@@ -91,27 +92,27 @@ const fetchAllCommitDates = async () => {
 
     // Fetch user repositories
     const userRepos = await fetchRepositories(username, token);
-    // console.log(`User Repos for ${username}:`, userRepos);
-    console.log(`User Repos for ${username}: fetched`)
+    console.log(`User Repos for ${username}:`, userRepos);
+    // console.log(`User Repos for ${username}: fetched`)
     for (let repo of userRepos) {
       const commitDates = await fetchCommits(repo.owner, repo.name, token, usernames);
       // console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
-      console.log(`Commits for ${repo.owner}/${repo.name}: fetched`)
+      // console.log(`Commits for ${repo.owner}/${repo.name}: fetched`)
       allCommitDates = allCommitDates.concat(commitDates);
     }
 
     // Fetch organization repositories
     const orgs = await fetchUserOrgs(username, token);
-    // console.log(`Orgs for ${username}:`, orgs);
-    console.log(`Orgs for ${username}: fetched`)
+    console.log(`Orgs for ${username}:`, orgs);
+    // console.log(`Orgs for ${username}: fetched`)
     for (let org of orgs) {
       const orgRepos = await fetchOrgRepositories(org, token);
       // console.log(`Org Repos for ${org}:`, orgRepos);
-      console.log(`Org Repos for ${org}: fetched`)
+      // console.log(`Org Repos for ${org}: fetched`)
       for (let repo of orgRepos) {
         const commitDates = await fetchCommits(repo.owner, repo.name, token, usernames);
         // console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
-        console.log(`Commits for ${repo.owner}/${repo.name}: fetched`)
+        // console.log(`Commits for ${repo.owner}/${repo.name}: fetched`)
         allCommitDates = allCommitDates.concat(commitDates);
       }
     }
@@ -149,6 +150,7 @@ export const getCommitData = async () => {
 
   // Group commits by year
   const commitsByYear = allCommitDates.reduce((acc, date) => {
+    console.log("date in commitsByYear", date)
     const year = date.slice(0, 4);
     if (!acc[year]) {
       acc[year] = [];
