@@ -310,7 +310,7 @@
         "is_idea": false,
         "is_external": false,
         "framework_chosen": true,
-        "is_showable": false,
+        "is_showable": true,
         "title": "Github Information",
         "description": "This will be a few different things. A visualization of my github commits but from all my accounts in 1 visualization. A visualization of different things regarding repositories across accounts",
         "date_started": "5/28/2024",
