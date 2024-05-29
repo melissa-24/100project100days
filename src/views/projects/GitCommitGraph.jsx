@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getCommitData } from '../../utils/gitHelper';
+import { getCommitData } from '../../utils/gitHelper-old';
 import { Bar } from 'react-chartjs-2';
 
 const GitCommitGraph = () => {

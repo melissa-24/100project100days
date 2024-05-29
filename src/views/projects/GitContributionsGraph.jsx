@@ -1,36 +1,34 @@
-import { API } from "../../utils/ApiHelpers"
 import { useEffect, useState } from "react"
+import githubService from "../../services/gitService";
+
 
 const GitContributionsGraph = () => {
-    const [data, setData] = useState(null)
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+
+    const [totalContributions, setTotalContributions] = useState(0);
+  const username = 'melissa-24'; // Replace with your GitHub username
+
+  useEffect(() => {
+    const fetchContributions = async () => {
+      try {
+        const events = await githubService.getUserEvents(username);
+        // Filter events to count contributions (commits, PRs, issues, etc.)
+        setTotalContributions(events.length);
+      } catch (error) {
+        console.error('Error fetching GitHub events:', error);
+      }
+    };
+
+    fetchContributions();
+  }, [username]);
 
 
-// API.getGitOrgRepos('orgname');
-// API.getUserRepos('username');
-// API.getUserOrgRepos('username', 'orgname');
-// API.getRepoCommits('owner', 'repo')
+    console.log("totalContributions", totalContributions)
 
-
-    useEffect(() => {
-        API.getUserRepos('melissa-24')
-        .then(response => {
-            setData(response)
-            setLoading(false)
-        })
-        .catch(error => {
-            setError(error)
-            setLoading(false)
-        })
-    })
-
-    if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error.message}</div>;
 
     return (
         <>
-        <pre>{JSON.stringify(data, null, 2)}</pre>
+            <h3>Git Contributions for All Accounts</h3>
+            <p>Total Contributions: {totalContributions}</p>
         </>
     )
 }
