@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+const GITHUB_API_URL = "https://api.github.com";
+
 const accounts = {
     'melissa-24': import.meta.env.VITE_GITHUB_TOKEN_USER1,
     'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
@@ -10,9 +12,29 @@ const accounts = {
 // get repos from user
 export const fetchRepositories = async (username) => {
     const token = accounts[username]
-    const url = `https://api.github.com/users/${username}/repos?per_page=100&page=1`
-    const headers = { 'Authorization': `token ${token}` }
-    const response = await axios.get(url, { headers })
-    // console.log("fetchRepos res", response)
-    return response
-};
+    let page = 1;
+    let repos = [];
+    let fetchedRepos;
+
+    // const url = `${GITHUB_API_URL}/users/${username}/repos?per_page=100&page=${page}`
+    // const headers = { 'Authorization': `token ${token}` }
+    // const response = await axios.get(url, { headers })
+    // // console.log("fetchRepos res", response)
+    // return response
+    do {
+        const response = await axios.get(`${GITHUB_API_URL}/users/${username}/repos`, {
+            params: {
+                per_page: 100,
+                page: page
+            },
+            headers: {
+                Authorization: `token ${token}`
+            }
+        })
+        fetchedRepos = response.data
+        repos = repos.concat(fetchedRepos)
+        page += 1
+    } while (fetchedRepos.length === 100)
+    
+    return repos
+}
