@@ -38,9 +38,12 @@ const AllReposCard = ({ username }) => {
 
     console.log(`fetching for ${username}`,"data", data, "loading", loading, "error", error)
 
+    const count = data.length
+
     return (
         <>
         <h3>{username}'s Repositories</h3>
+        <h3>Total Count = {count}</h3>
         </>
     )
 }
