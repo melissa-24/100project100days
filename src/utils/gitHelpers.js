@@ -16,11 +16,6 @@ export const fetchRepositories = async (username) => {
     let repos = [];
     let fetchedRepos;
 
-    // const url = `${GITHUB_API_URL}/users/${username}/repos?per_page=100&page=${page}`
-    // const headers = { 'Authorization': `token ${token}` }
-    // const response = await axios.get(url, { headers })
-    // // console.log("fetchRepos res", response)
-    // return response
     do {
         const response = await axios.get(`${GITHUB_API_URL}/users/${username}/repos`, {
             params: {
