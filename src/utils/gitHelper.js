@@ -1,93 +1,67 @@
-import axios from "axios"
+const GITHUB_API_URL = "https://api.github.com";
 
 const accounts = {
     'melissa-24': import.meta.env.VITE_GITHUB_TOKEN_USER1,
-    // 'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
-    // 'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
-    // 'melissa-techByte': import.meta.env.VITE_GITHUB_TOKEN_USER4,
-    // 'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
+    'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
+    'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
+    'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
 };
 
-const fetchRepositories = async (username, token) => {
-    const url = `https://api.github.com/users/${username}/repos`;
-    const headers = { 'Authorization': `token ${token}` };
-    const response = await axios.get(url, { headers });
-    return response.data.map(repo => ({ owner: username, name: repo.name }));
-};
-
-const fetchOrgRepositories = async (org, token) => {
-    const url = `https://api.github.com/orgs/${org}/repos`;
-    const headers = { 'Authorization': `token ${token}` };
-    const response = await axios.get(url, { headers });
-    return response.data.map(repo => ({ owner: org, name: repo.name }));
-};
-
-const fetchUserOrgs = async (username, token) => {
-    const url = `https://api.github.com/users/${username}/orgs`;
-    const headers = { 'Authorization': `token ${token}` };
-    const response = await axios.get(url, { headers });
-    return response.data.map(org => org.login);
-};
-
-const fetchCommits = async (owner, repo, token) => {
-    const url = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=100`;
-    const headers = { 'Authorization': `token ${token}` };
+const fetchAllRepos = async (username, token) => {
     let page = 1;
-    let commitDates = [];
+    let repos = [];
+    let fetchedRepos;
 
-    while (true) {
-        const response = await axios.get(`${url}&page=${page}`, { headers });
-        if (response.data.length === 0) break;
-        commitDates = commitDates.concat(response.data.map(commit => commit.commit.author.date.slice(0, 10)));
-        page++;
-    }
-
-    return commitDates;
-};
-
-const fetchAllCommitDates = async () => {
-    let allCommitDates = [];
-
-    for (let username in accounts) {
-        const token = accounts[username];
-
-        // Fetch user repositories
-        const userRepos = await fetchRepositories(username, token);
-        for (let repo of userRepos) {
-            const commitDates = await fetchCommits(repo.owner, repo.name, token);
-            allCommitDates = allCommitDates.concat(commitDates);
-        }
-
-        // Fetch organization repositories
-        const orgs = await fetchUserOrgs(username, token);
-        for (let org of orgs) {
-            const orgRepos = await fetchOrgRepositories(org, token);
-            for (let repo of orgRepos) {
-                const commitDates = await fetchCommits(repo.owner, repo.name, token);
-                allCommitDates = allCommitDates.concat(commitDates);
+    do {
+        const response = await fetch(`${GITHUB_API_URL}/users/${username}/repos?per_page=100&page=${page}`, {
+            headers: {
+                Authorization: `token ${token}`
             }
+        });
+
+        console.log('user repo res', response)
+        if (!response.ok) {
+            throw new Error(`Error fetching repos for user ${username}`);
         }
-    }
 
-    return allCommitDates;
+        fetchedRepos = await response.json();
+        repos = repos.concat(fetchedRepos);
+        page += 1;
+    } while (fetchedRepos.length === 100);
+
+    return repos.length;
 };
 
-const CACHE_KEY = 'commitData';
-const CACHE_TIMESTAMP_KEY = 'commitDataTimestamp';
-const ONE_DAY = 24 * 60 * 60 * 1000; // One day in milliseconds
+const fetchRepoCount = async (username) => {
+    const token = accounts[username];
 
-export const getCommitData = async () => {
-    const now = Date.now();
-    const cachedData = localStorage.getItem(CACHE_KEY);
-    const cachedTimestamp = localStorage.getItem(CACHE_TIMESTAMP_KEY);
-
-    if (cachedData && cachedTimestamp && (now - cachedTimestamp) < ONE_DAY) {
-        return JSON.parse(cachedData);
+    if (!token) {
+        throw new Error(`No token found for user ${username}`);
     }
 
-    const allCommitDates = await fetchAllCommitDates();
-    localStorage.setItem(CACHE_KEY, JSON.stringify(allCommitDates));
-    localStorage.setItem(CACHE_TIMESTAMP_KEY, now.toString());
-
-    return allCommitDates;
+    return await fetchAllRepos(username, token);
 };
+
+const fetchOrganizations = async (username) => {
+    const token = accounts[username];
+
+    if (!token) {
+        throw new Error(`No token found for user ${username}`);
+    }
+
+    const response = await fetch(`${GITHUB_API_URL}/users/${username}/orgs`, {
+        headers: {
+            Authorization: `token ${token}`
+        }
+    });
+
+    if (!response.ok) {
+        throw new Error(`Error fetching organizations for user ${username}`);
+    }
+
+    const data = await response.json();
+    console.log("org data", data, "response", response.headers)
+    return data;
+};
+
+export { fetchRepoCount, fetchOrganizations };

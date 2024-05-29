@@ -13,6 +13,7 @@ import CssImage from './views/projects/CssImage'
 import ImagesApi from './views/projects/ImagesApi'
 import GitCommitGraph from './views/projects/GitCommitGraph'
 import GitContributionsGraph from './views/projects/GitContributionsGraph'
+import GitRepos from './views/projects/GitRepos'
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/projects/19" element={< CssImage />} />
           {/* <Route path="/projects/20" element={< GitCommitGraph />} /> */}
           <Route path="/projects/20" element={<GitContributionsGraph />} />
+          <Route path="/projects/21" element={<GitRepos />} />
         </Routes>
       </main>
       <Footer />
