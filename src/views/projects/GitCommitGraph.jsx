@@ -77,29 +77,29 @@ const GitCommitGraph = () => {
      // Calculate total commits
   const totalCommits = Object.values(commitsByMonth).reduce((total, commits) => total + commits, 0);
 
-// Prepare data for Chart.js
-const chartData = {
-  labels: sortedMonths,
-  datasets: [{
-    label: 'Commits by Month',
-    data: Object.values(commitsByMonth),
-    backgroundColor: 'rgba(75,192,192,0.2)',
-    borderColor: 'rgba(75,192,192,1)',
-    borderWidth: 1
-  }]
-};
+// // Prepare data for Chart.js
+// const chartData = {
+//   labels: sortedMonths,
+//   datasets: [{
+//     label: 'Commits by Month',
+//     data: Object.values(commitsByMonth),
+//     backgroundColor: 'rgba(75,192,192,0.2)',
+//     borderColor: 'rgba(75,192,192,1)',
+//     borderWidth: 1
+//   }]
+// };
 
-const chartOptions = {
-  scales: {
-    x: {
-      type: 'category', // Use category scale type for the x-axis
-      labels: sortedMonths // Provide the labels for the x-axis
-    },
-    y: {
-      beginAtZero: true // Optional: Ensure y-axis starts at zero
-    }
-  }
-};
+// const chartOptions = {
+//   scales: {
+//     x: {
+//       type: 'category', // Use category scale type for the x-axis
+//       labels: sortedMonths // Provide the labels for the x-axis
+//     },
+//     y: {
+//       beginAtZero: true // Optional: Ensure y-axis starts at zero
+//     }
+//   }
+// };
 
   return (
     <div>
@@ -148,10 +148,10 @@ const chartOptions = {
           </tbody>
         </table>
       </div>
-      <div>
+      {/* <div>
       <h3>Commits by Month (Bar Graph)</h3>
       <Bar data={chartData} options={chartOptions} />
-    </div>
+    </div> */}
     </div>
   );
 };
