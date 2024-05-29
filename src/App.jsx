@@ -13,7 +13,6 @@ import CssImage from './views/projects/CssImage'
 import ImagesApi from './views/projects/ImagesApi'
 import GitCommitGraph from './views/projects/GitCommitGraph'
 
-
 function App() {
 
 

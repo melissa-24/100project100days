@@ -9,30 +9,11 @@ const ENDPOINTS = {
     getImages: '/images',
     getMedium: '/mediums',
     getSubCategories: '/subCategories',
-    getChallengesJson: '/melissa-24/codeChallenges/main/challengeData.json',
-    getGitUser: '/users',
-    getGitOrgs: '/orgs'
+    getChallengesJson: '/melissa-24/codeChallenges/main/challengeData.json'
 };
-
-const TOKENS = {
-    MELISSA24: import.meta.env.VITE_GITHUB_TOKEN_USER1,
-    DOJO24: import.meta.env.VITE_GITHUB_TOKEN_USER2,
-    BEEDEVSERVICES: import.meta.env.VITE_GITHUB_TOKEN_USER3,
-    MELISSATECHBYTE: import.meta.env.VITE_GITHUB_TOKEN_USER4,
-    TECHBYTELEARNING: import.meta.env.VITE_GITHUB_TOKEN_USER5,
-}
-
-const USER_ORG = {
-    getUserMelissa24: '/melissa-24',
-    getUserDojo24: '/dojo24',
-    getUserBeeDevServices: '/beedevservices',
-    getUserMelissaTechByte: '/melissa-techByte',
-    getUserTechByteLearning: '/techByteLearning'
-}
 
 const createUrl = (endpoint) => `${BASE_URL}${endpoint}`;
 const createAltUrl = (endpoint) => `${CHALLENGES_JSON}${endpoint}`
-const createGitUrl = (endpoint) => `${GIT_BASE_URL}${endpoint}${USER_ORG}/repos`
 
 export const get = async(endpoint, params = {}) => {
     try{
@@ -52,7 +33,6 @@ export const challengesGet = async(endpoint, params = {}) => {
         console.log(error)
     }
 }
-
 
 
 export const API = {

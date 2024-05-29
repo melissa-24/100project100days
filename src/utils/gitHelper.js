@@ -4,10 +4,10 @@ import axios from 'axios';
 
 const accounts = {
   'melissa-24': import.meta.env.VITE_GITHUB_TOKEN_USER1,
-  'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
-  'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
+  // 'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
+  // 'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
   // 'melissa-techByte': import.meta.env.VITE_GITHUB_TOKEN_USER4,
-  'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
+  // 'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
 };
 
 const fetchRepositories = async (username, token) => {
