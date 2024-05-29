@@ -4,7 +4,7 @@ const accounts = {
   'melissa-24': import.meta.env.VITE_GITHUB_TOKEN_USER1,
   'dojo24': import.meta.env.VITE_GITHUB_TOKEN_USER2,
   'beedevservices': import.meta.env.VITE_GITHUB_TOKEN_USER3,
-  'melissa-techByte': import.meta.env.VITE_GITHUB_TOKEN_USER4,
+  // 'melissa-techByte': import.meta.env.VITE_GITHUB_TOKEN_USER4,
   'techByteLearning': import.meta.env.VITE_GITHUB_TOKEN_USER5
 };
 
@@ -63,7 +63,7 @@ const fetchAllCommitDates = async () => {
     console.log(`User Repos for ${username}:`, userRepos);
     for (let repo of userRepos) {
       const commitDates = await fetchCommits(repo.owner, repo.name, token, usernames);
-      console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
+      // console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
       allCommitDates = allCommitDates.concat(commitDates);
     }
 
@@ -75,7 +75,7 @@ const fetchAllCommitDates = async () => {
       console.log(`Org Repos for ${org}:`, orgRepos);
       for (let repo of orgRepos) {
         const commitDates = await fetchCommits(repo.owner, repo.name, token, usernames);
-        console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
+        // console.log(`Commits for ${repo.owner}/${repo.name}:`, commitDates);
         allCommitDates = allCommitDates.concat(commitDates);
       }
     }
