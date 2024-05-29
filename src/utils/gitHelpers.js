@@ -10,9 +10,9 @@ const accounts = {
 // get repos from user
 export const fetchRepositories = async (username) => {
     const token = accounts[username]
-    const url = `https://api.github.com/users/${username}/repos`
+    const url = `https://api.github.com/users/${username}/repos?per_page=100&page=1`
     const headers = { 'Authorization': `token ${token}` }
     const response = await axios.get(url, { headers })
-    console.log("fetchRepos res", response)
+    // console.log("fetchRepos res", response)
     return response
 };

@@ -36,7 +36,7 @@ const AllReposCard = ({ username }) => {
     }
     if (error) return <div>Error: {error}</div>;
 
-    console.log("data", data, "loading", loading, "error", error)
+    console.log(`fetching for ${username}`,"data", data, "loading", loading, "error", error)
 
     return (
         <>
