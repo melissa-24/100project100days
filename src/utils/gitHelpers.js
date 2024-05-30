@@ -10,17 +10,18 @@ const accounts = {
 }
 
 // get repos from user
-export const fetchRepositories = async (username) => {
+const fetchRepositories = async (username) => {
     const token = accounts[username]
     let page = 1;
     let repos = [];
     let fetchedRepos;
 
     do {
-        const response = await axios.get(`${GITHUB_API_URL}/users/${username}/repos`, {
+        const response = await axios.get(`${GITHUB_API_URL}/user/repos`, {
             params: {
                 per_page: 100,
-                page: page
+                page: page,
+                visibility: 'all'
             },
             headers: {
                 Authorization: `token ${token}`
@@ -33,3 +34,5 @@ export const fetchRepositories = async (username) => {
     
     return repos
 }
+
+export { fetchRepositories }
