@@ -1,25 +1,34 @@
-import { useEffect, useState } from 'react';
-import { fetchRepoCount } from '../../../utils/gitHelper';
+import { useEffect, useState } from 'react'
+import { fetchRepositories } from '../../../utils/gitHelpers'
 
-const RepoCountCard = ({ username }) => {
-    const [repoCount, setRepoCount] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+const AllReposCard = ({ username }) => {
+    const [data, setData] = useState(null)
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+    const [isPrivate, setIsPrivate] = useState(null)
+    const [isPublic, setIsPublic] = useState(null)
 
     useEffect(() => {
-        const getRepoCount = async () => {
+        const getRepos = async () => {
             try {
-                const count = await fetchRepoCount(username);
-                setRepoCount(count);
-            } catch (err) {
-                setError(err.message);
+                const repos = await fetchRepositories(username)
+                const nonArchivedRepos = repos.filter(repo => !repo.archived)
+                setData(nonArchivedRepos)
+                setData(repos)
+                const privateRepos = repos.filter(repo => repo.private).length
+                const publicRepos = repos.length - privateRepos
+                setIsPrivate(privateRepos)
+                setIsPublic(publicRepos)
+                const pubRep = repos.filter(repo => !repo.private)
+                console.log("show public repo list", pubRep)
+            } catch(err) {
+                setError(err.message)
             } finally {
-                setLoading(false);
+                setLoading(false)
             }
-        };
-
-        getRepoCount();
-    }, [username]);
+        }
+        getRepos()
+    }, [username])
 
     if (loading) {
         return (
@@ -37,12 +46,16 @@ const RepoCountCard = ({ username }) => {
     }
     if (error) return <div>Error: {error}</div>;
 
-    return (
-        <div className="repo-count-card">
-            <h3>{username}'s Repositories</h3>
-            <p>Repo Count: {repoCount}</p>
-        </div>
-    );
-};
+    console.log(`fetching for ${username}`,"data", data, "loading", loading, "error", error, "private count", isPrivate, "public count", isPublic)
 
-export default RepoCountCard;
+    const count = data.length
+
+    return (
+        <>
+        <h3>Account Information for user = {username}</h3>
+        <h3>Total Repository Count (Includes Organization Repos) = {count}</h3>
+        </>
+    )
+}
+
+export default AllReposCard

@@ -35,4 +35,14 @@ const fetchRepositories = async (username) => {
     return repos
 }
 
-export { fetchRepositories }
+const fetchAllRepos = async (usernames) => {
+    let combinedRepos = []
+    for (const username of usernames) {
+        const userRepos = await fetchRepositories(username)
+        combinedRepos = combinedRepos.concat(userRepos)
+    }
+    console.log("combined repo list", combinedRepos)
+    return combinedRepos
+}
+
+export { fetchRepositories, fetchAllRepos }

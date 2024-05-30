@@ -1,57 +1,13 @@
-import { useEffect, useState } from 'react'
-import { fetchRepositories } from '../../../utils/gitHelpers'
 
-const AllReposCard = ({ username }) => {
-    const [data, setData] = useState(null)
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
-    const [isPrivate, setIsPrivate] = useState(null)
-    const [isPublic, setIsPublic] = useState(null)
 
-    useEffect(() => {
-        const getRepos = async () => {
-            try {
-                const repos = await fetchRepositories(username)
-                const nonArchivedRepos = repos.filter(repo => !repo.archived)
-                setData(nonArchivedRepos)
-                setData(repos)
-                const privateRepos = repos.filter(repo => repo.private).length
-                const publicRepos = repos.length - privateRepos
-                setIsPrivate(privateRepos)
-                setIsPublic(publicRepos)
-            } catch(err) {
-                setError(err.message)
-            } finally {
-                setLoading(false)
-            }
-        }
-        getRepos()
-    }, [username])
+const AllReposCard = ({ allRepos }) => {
+    const totalRepoCount = allRepos.length
 
-    if (loading) {
-        return (
-            <div className="loadingSpinner">
-                <h3>Loading....this might take some time</h3>
-                <div className="spinner">
-                    <div className="hive-spinner">
-                        <div className="heaven hexagon"></div>
-                        <div className="honey hexagon"></div>
-                        <div className="hive hexagon"></div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-    if (error) return <div>Error: {error}</div>;
 
-    console.log(`fetching for ${username}`,"data", data, "loading", loading, "error", error, "private count", isPrivate, "public count", isPublic)
-
-    const count = data.length
 
     return (
         <>
-        <h3>Account Information for user = {username}</h3>
-        <h3>Total Repository Count = {count}</h3>
+        <h3>Total Repository Count = {totalRepoCount}</h3>
         </>
     )
 }
