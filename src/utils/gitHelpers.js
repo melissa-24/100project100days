@@ -35,6 +35,7 @@ const fetchRepositories = async (username) => {
     return repos
 }
 
+// get all repos for a list of users
 const fetchAllRepos = async (usernames) => {
     let combinedRepos = []
     for (const username of usernames) {
@@ -45,4 +46,42 @@ const fetchAllRepos = async (usernames) => {
     return combinedRepos
 }
 
-export { fetchRepositories, fetchAllRepos }
+// get commit data from one repo for a specific user
+const fetchRepoCommitByUser = async (username, repoName) => {
+    const token = accounts[username]
+    let page = 1
+    let userCommits = []
+    let fetchedCommits
+
+    do {
+        const res = await axios.get(`${GITHUB_API_URL}/repos/${repoName}/commits`, {
+            params: {
+                per_page: 100,
+                page: page,
+                author: username
+            },
+            headers: {
+                Authorization: `token ${token}`
+            }
+        })
+        fetchedCommits = res.data
+        userCommits = userCommits.concat(fetchedCommits)
+        page += 1
+    } while (fetchedCommits.length === 100)
+    
+    return userCommits
+}
+
+// get commit data for all repos for the user
+const fetchAllCommitsForUser = async (username) => {
+    const repos = await fetchAllRepos(username)
+    let allCommits = []
+
+    for (const repo of repos) {
+        const commits = await fetchRepoCommitByUser(username, repo.full_name)
+        allCommits = allCommits.concat(commits)
+    }
+    return allCommits
+}
+
+export { fetchRepositories, fetchAllRepos, fetchAllCommitsForUser }

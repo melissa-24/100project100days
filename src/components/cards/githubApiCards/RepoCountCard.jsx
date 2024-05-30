@@ -52,7 +52,6 @@ const AllReposCard = ({ username }) => {
 
     return (
         <>
-        <h3>Account Information for user = {username}</h3>
         <h3>Total Repository Count (Includes Organization Repos) = {count}</h3>
         </>
     )

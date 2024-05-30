@@ -3,6 +3,7 @@ import { fetchAllRepos } from '../../utils/gitHelpers'
 
 import RepoCountCard from "../../components/cards/githubApiCards/RepoCountCard"
 import AllReposCard from '../../components/cards/githubApiCards/AllRepoCard'
+import CommitCountCard from '../../components/cards/githubApiCards/CommitCountCard'
 
 const GithubProject = () => {
 
@@ -25,6 +26,8 @@ const GithubProject = () => {
         }
         fetchCombinedRepos()
     }, [])
+
+    console.log("allRepos in Project file",allRepos)
 
     if (loading) {
         return (
@@ -51,7 +54,11 @@ const GithubProject = () => {
         <AllReposCard username="beedevservices" /> */}
         <AllReposCard allRepos={allRepos} />
         {usernames.map(username => (
-            <RepoCountCard key={username} username={username} />
+            <div key={username}>
+                <h2>Account information for {username}</h2>
+                <RepoCountCard username={username} />
+                {/* <CommitCountCard username={username} /> */}
+            </div>
         ))}
         </>
         
