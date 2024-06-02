@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { fetchRepositories } from '../../../utils/gitHelpers'
 
-const AllReposCard = ({ username }) => {
+const RepoCountCard = ({ username }) => {
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
@@ -20,7 +20,7 @@ const AllReposCard = ({ username }) => {
                 setIsPrivate(privateRepos)
                 setIsPublic(publicRepos)
                 const pubRep = repos.filter(repo => !repo.private)
-                console.log("show public repo list", pubRep)
+                // console.log("show public repo list", pubRep)
             } catch(err) {
                 setError(err.message)
             } finally {
@@ -46,7 +46,7 @@ const AllReposCard = ({ username }) => {
     }
     if (error) return <div>Error: {error}</div>;
 
-    console.log(`fetching for ${username}`,"data", data, "loading", loading, "error", error, "private count", isPrivate, "public count", isPublic)
+    // console.log(`fetching for ${username}`,"data", data, "loading", loading, "error", error, "private count", isPrivate, "public count", isPublic)
 
     const count = data.length
 
@@ -57,4 +57,4 @@ const AllReposCard = ({ username }) => {
     )
 }
 
-export default AllReposCard
+export default RepoCountCard
