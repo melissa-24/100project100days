@@ -85,9 +85,28 @@ body #root main .projects {
   flex-wrap: wrap;
 }
 body #root main .projects .proj_box {
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
   margin: 0.5em;
+  border: 2px solid #000000;
+  padding: 0.5em;
+}
+body #root main .projects .proj_box .updated_blue_red {
+  color: #0000ff;
+  -webkit-animation: blink 800ms step-end infinite;
+  animation: blink 800ms step-end infinite;
+}
+@-webkit-keyframes blink {
+  50% {
+    color: #ff0000;
+  }
+}
+@keyframes blink {
+  50% {
+    color: #ff0000;
+  }
 }
 body #root main #bg_changer {
   width: 400px;

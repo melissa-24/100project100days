@@ -38,6 +38,11 @@ const ProjCard = ({ title, projects }) => {
                 :
                   <h3>Finished Date: {project.date_finished}</h3>
                 }
+                {project.is_new == true ?
+                  <h2 className="updated_blue_red">Updated!!!</h2>
+                :
+                  <span></span>
+                }
                 {project.is_showable == true ?
                   <Link to={`/projects/${project.id}`}>View Project</Link>
                 :
