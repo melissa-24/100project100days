@@ -5,8 +5,8 @@ body {
     width: 99%;
     background-color: @bg;
     // background-image: url(${backgroundImage});
-    background: linear-gradient(49deg, @bg 20%, @altbg 50%, @bg 80%);
-    color: @yellow;
+    // background: linear-gradient(49deg, @bg 20%, @altbg 50%, @bg 80%);
+    // color: @yellow;
 
     #root {
         .flexcolumn();
@@ -15,11 +15,19 @@ body {
         header {
             .flexcolumn();
             width: 95%;
+            padding-bottom: 1em;
+            .boxShadow();
     
             nav {
                 .flexrow();
                 justify-content: space-evenly;
                 width: 100%;
+
+                a {
+                    color: @green;
+                    padding: .5em;
+                    .altBoxShadow();
+                }
             }
         }
         main {
@@ -76,7 +84,8 @@ body {
         }
         footer {
             .flexcolumn();
-            width: 95%;        
+            width: 95%;
+            .boxShadow();        
         }
     }
 }

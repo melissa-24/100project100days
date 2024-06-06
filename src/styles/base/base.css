@@ -11,5 +11,11 @@
   align-items: center;
 }
 a {
-  color: #ffff00;
+  color: #008000;
+}
+.boxShadow {
+  box-shadow: 0 0.25em 0.75em #124c4c72;
+}
+.altBoxShadow {
+  box-shadow: 0 0.25em 0.75em #00800071;
 }

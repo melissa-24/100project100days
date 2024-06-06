@@ -138,7 +138,7 @@
     {
         "id": "9",
         "is_finished": true,
-        "is_started": true,
+        "is_started": false,
         "is_idea": false,
         "is_external": false,
         "framework_chosen": true,

@@ -13,7 +13,13 @@
   align-items: center;
 }
 a {
-  color: #ffff00;
+  color: #008000;
+}
+.boxShadow {
+  box-shadow: 0 0.25em 0.75em #124c4c72;
+}
+.altBoxShadow {
+  box-shadow: 0 0.25em 0.75em #00800071;
 }
 body {
   display: flex;
@@ -21,9 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 99%;
-  background-color: #1c1700;
-  background: linear-gradient(49deg, #1c1700 20%, #787c21 50%, #1c1700 80%);
-  color: #ffff00;
+  background-color: #cfcdcd;
 }
 body #root {
   display: flex;
@@ -38,6 +42,8 @@ body #root header {
   justify-content: center;
   align-items: center;
   width: 95%;
+  padding-bottom: 1em;
+  box-shadow: 0 0.25em 0.75em #124c4c72;
 }
 body #root header nav {
   display: flex;
@@ -46,6 +52,11 @@ body #root header nav {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+}
+body #root header nav a {
+  color: #008000;
+  padding: 0.5em;
+  box-shadow: 0 0.25em 0.75em #00800071;
 }
 body #root main {
   display: flex;
@@ -118,4 +129,5 @@ body #root footer {
   justify-content: center;
   align-items: center;
   width: 95%;
+  box-shadow: 0 0.25em 0.75em #124c4c72;
 }
