@@ -15,7 +15,12 @@ a {
 }
 .boxShadow {
   box-shadow: 0 0.25em 0.75em #124c4c72;
+  margin: 1em 0;
+  padding: 1em;
 }
 .altBoxShadow {
   box-shadow: 0 0.25em 0.75em #00800071;
+}
+.insetShadow {
+  box-shadow: 0 0 1em 0.06em #00800071 inset;
 }

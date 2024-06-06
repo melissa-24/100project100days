@@ -17,9 +17,14 @@ a {
 }
 .boxShadow {
   box-shadow: 0 0.25em 0.75em #124c4c72;
+  margin: 1em 0;
+  padding: 1em;
 }
 .altBoxShadow {
   box-shadow: 0 0.25em 0.75em #00800071;
+}
+.insetShadow {
+  box-shadow: 0 0 1em 0.06em #00800071 inset;
 }
 body {
   display: flex;
@@ -44,6 +49,8 @@ body #root header {
   width: 95%;
   padding-bottom: 1em;
   box-shadow: 0 0.25em 0.75em #124c4c72;
+  margin: 1em 0;
+  padding: 1em;
 }
 body #root header nav {
   display: flex;
@@ -64,6 +71,9 @@ body #root main {
   justify-content: center;
   align-items: center;
   width: 95%;
+  box-shadow: 0 0.25em 0.75em #124c4c72;
+  margin: 1em 0;
+  padding: 1em;
 }
 body #root main .challCard {
   display: flex;
@@ -95,14 +105,20 @@ body #root main .projects {
   align-items: center;
   flex-wrap: wrap;
 }
+body #root main .projects .proj_date_box {
+  width: 250px;
+  margin: 0.5em;
+  padding: 1.5em;
+  box-shadow: 0 0 1em 0.06em #00800071 inset;
+}
 body #root main .projects .proj_box {
   min-width: 200px;
   min-height: 200px;
   max-width: 400px;
   max-height: 400px;
   margin: 0.5em;
-  border: 2px solid #000000;
-  padding: 0.5em;
+  padding: 1.5em;
+  box-shadow: 0 0 1em 0.06em #00800071 inset;
 }
 body #root main .projects .proj_box .updated_blue_red {
   color: #0000ff;
@@ -130,4 +146,6 @@ body #root footer {
   align-items: center;
   width: 95%;
   box-shadow: 0 0.25em 0.75em #124c4c72;
+  margin: 1em 0;
+  padding: 1em;
 }

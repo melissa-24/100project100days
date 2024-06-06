@@ -30,7 +30,7 @@ const DaysCard = ({ filterBy }) => {
         <div className="projects">
             {eventResults.map(( result ) => {
                 return(
-                    <div id={result.id} key={result.id} className="proj_box">
+                    <div id={result.id} key={result.id} className="proj_date_box">
                         <p>{result.eventName} - {result.daysDifference} days ago</p>
                     </div>
                 )

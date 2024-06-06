@@ -33,6 +33,7 @@ body {
         main {
             .flexcolumn();
             width: 95%;
+            .boxShadow();
 
             .challCard {
                 .flexcolumn();
@@ -55,6 +56,13 @@ body {
             .projects {
                 .flexrow();
                 flex-wrap: wrap;
+
+                .proj_date_box {
+                    width: 250px;
+                    margin: .5em;
+                    padding: 1.5em;
+                    .insetShadow();
+                }
                 
     
                 .proj_box {
@@ -63,8 +71,8 @@ body {
                     max-width: 400px;
                     max-height: 400px;
                     margin: .5em;
-                    border: 2px solid @black;
-                    padding: .5em;
+                    padding: 1.5em;
+                    .insetShadow();
 
                     .updated_blue_red {
                         color: @blue;
