@@ -1,6 +1,4 @@
-// import projects from "../json/projects.json"
 import { projFilter } from "../utils/ProjectHelper"
-// import FrameworkCard from "../components/cards/FrameworkCard"
 import ProjCard from "../components/cards/ProjCard"
 
 

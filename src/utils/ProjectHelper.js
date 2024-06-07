@@ -11,3 +11,15 @@ export const projLength = (theFilter) => {
     return results
 }
 
+export const projFilterByContent = (key) => {
+    const results = projects.filter(project => {
+        const value = project[key]
+        return typeof value === 'string' && value.trim() !== ""
+    })
+    return results
+}
+
+export const projContentLength = (key) => {
+    const results = projFilterByContent(key).length
+    return results
+}
