@@ -58,5 +58,17 @@
         "is_not_template": true,
         "date": "5/14/24",
         "content": "Today was just a CSS day.  I didn't do much just cleaned some of it up."
+    },
+    {
+        "day": "50",
+        "is_not_template": true,
+        "date": "6/7/24",
+        "content": "To today is day 50 and what I have realized is I haven't been keeping up with this log for 1.  I am not even close to 50 project yet for 2. And I have more ideas or started projects than finished ones. So that needs to change. "
+    },
+    {
+        "day": "",
+        "is_not_template": false,
+        "date": "",
+        "content": ""
     }
 ]

@@ -10,6 +10,7 @@ import Challenges from './views/projects/Challenges'
 import CssImage from './views/projects/CssImage'
 import ImagesApi from './views/projects/ImagesApi'
 import GithubProject from './views/projects/GithubProject'
+import ViteTemplate from './views/projects/ViteTemplate'
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/logs" element={<Logs />} />
-          <Route path="projects/2" element={<Logs />} />
+          <Route path="/projects/1" element={<ViteTemplate />} />
+          <Route path="/projects/2" element={<Logs />} />
           <Route path="/projects/3" element={<BackgroundChanger />} />
           <Route path="/projects/5" element={<ImagesApi />} />
           <Route path="/projects/9" element={<ImportantDates />} />
