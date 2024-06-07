@@ -4,6 +4,7 @@ import { fetchAllRepos } from '../../utils/gitHelpers'
 import RepoCountCard from "../../components/cards/githubApiCards/RepoCountCard"
 import AllReposCard from '../../components/cards/githubApiCards/AllRepoCard'
 import CommitCountCard from '../../components/cards/githubApiCards/CommitCountCard'
+import AllCommitCard from '../../components/cards/githubApiCards/AllCommitCard'
 
 const GithubProject = () => {
 
@@ -51,6 +52,7 @@ const GithubProject = () => {
     return (
         <>
         <AllReposCard allRepos={allRepos} />
+        <AllCommitCard usernames={usernames} />
         {usernames.map(username => (
             <div key={username}>
                 <h2>Account information for {username}</h2>

@@ -1,4 +1,3 @@
-// cacheHelper.js
 
 // Set cache with expiry time
 const setCache = (key, data, ttl) => {

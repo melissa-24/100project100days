@@ -39,7 +39,7 @@ const ProjCard = ({ title, projects }) => {
                   <h3>Finished Date: {project.date_finished}</h3>
                 }
                 {project.is_new == true ?
-                  <h2 className="updated_blue_red">Updated!!!</h2>
+                  <h2 className="updated_blue_red">Updated {project.last_updated}!!!</h2>
                 :
                   <span></span>
                 }

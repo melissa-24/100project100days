@@ -66,6 +66,8 @@ body {
                 
     
                 .proj_box {
+                    .flexcolumn();
+                    align-items: flex-start;
                     min-width: 200px;
                     min-height: 200px;
                     max-width: 400px;
@@ -74,13 +76,15 @@ body {
                     padding: 1.5em;
                     .insetShadow();
 
+                    a {
+                        color: @green;
+                    }
+
                     .updated_blue_red {
                         color: @blue;
-                        -webkit-animation: blink 800ms step-end infinite;
-                                animation: blink 800ms step-end infinite;
+                        .redBlinking();
+                        .boxShadow();
                     }
-                    @-webkit-keyframes blink { 50% { color: @red; }}
-                            @keyframes blink { 50% { color: @red; }}
                 }
             }
     

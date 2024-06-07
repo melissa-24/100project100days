@@ -45,3 +45,22 @@ a {
 .insetShadow {
     box-shadow: 0 0 1em .06em @altShadow inset;
 }
+
+.redBlinking {
+    -webkit-animation: blink 800ms step-end infinite;
+            animation: blink 800ms step-end infinite;
+
+    @-webkit-keyframes blink { 50% { color: @red; }}
+            @keyframes blink { 50% { color: @red; }}
+}
+.greenBlinking {
+    -webkit-animation: blink 800ms step-end infinite;
+            animation: blink 800ms step-end infinite;
+
+    @-webkit-keyframes blink { 50% { color: @green; }}
+            @keyframes blink { 50% { color: @green; }}
+}
+
+.updateBorder {
+    .altBoxShadow();
+}

@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { setCache, getCache } from './cacheHelper'
+// import { setCache, getCache } from './idbHelper';
 
 const GITHUB_API_URL = "https://api.github.com";
 const CACHE_TTL = 2 * 60 * 60 * 1000
@@ -149,4 +150,23 @@ const fetchAllCommitsForUser = async (username) => {
     return allCommits
 }
 
-export { fetchRepositories, fetchAllRepos, fetchAllCommitsForUser }
+// get commit data for all repos for multiple users
+const fetchCommitsForAllUsers = async (usernames) => {
+    const cacheKey = `all_commits_${usernames.join('_')}`;
+    const cachedCommits = getCache(cacheKey);
+
+    if (cachedCommits) {
+        return cachedCommits;
+    }
+
+    let allCommits = [];
+    for (const username of usernames) {
+        const userCommits = await fetchAllCommitsForUser(username);
+        allCommits = allCommits.concat(userCommits);
+    }
+
+    setCache(cacheKey, allCommits, CACHE_TTL);
+    return allCommits;
+};
+
+export { fetchRepositories, fetchAllRepos, fetchAllCommitsForUser, fetchCommitsForAllUsers }

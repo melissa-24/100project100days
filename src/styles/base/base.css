@@ -24,3 +24,34 @@ a {
 .insetShadow {
   box-shadow: 0 0 1em 0.06em #00800071 inset;
 }
+.redBlinking {
+  -webkit-animation: blink 800ms step-end infinite;
+  animation: blink 800ms step-end infinite;
+}
+@-webkit-keyframes blink {
+  50% {
+    color: #ff0000;
+  }
+}
+@keyframes blink {
+  50% {
+    color: #ff0000;
+  }
+}
+.greenBlinking {
+  -webkit-animation: blink 800ms step-end infinite;
+  animation: blink 800ms step-end infinite;
+}
+@-webkit-keyframes blink {
+  50% {
+    color: #008000;
+  }
+}
+@keyframes blink {
+  50% {
+    color: #008000;
+  }
+}
+.updateBorder {
+  box-shadow: 0 0.25em 0.75em #00800071;
+}
