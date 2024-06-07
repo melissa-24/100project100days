@@ -1,7 +1,7 @@
 
 
 
-const FrameworkCard = ({ title, projects }) => {
+const ProjectDetailCard = ({ title, projects }) => {
   
     return (
       <>
@@ -20,6 +20,6 @@ const FrameworkCard = ({ title, projects }) => {
     );
   };
   
-  export default FrameworkCard;
+  export default ProjectDetailCard;
   
   
