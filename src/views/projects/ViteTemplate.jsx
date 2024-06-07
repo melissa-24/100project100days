@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { projFilterByContent } from "../../utils/ProjectHelper"
 
 const ViteTemplate = () => {
@@ -15,6 +16,16 @@ const ViteTemplate = () => {
                         <h2>Project #: {d.id}</h2>
                         <h3>Project Title: {d.title}</h3>
                         <p>{d.description}</p>
+                        {d.is_showable == true ?
+                            <Link to={`/projects/${d.id}`}>View Project</Link>
+                        :
+                            <h4>Link coming soon</h4>
+                        }
+                        {d.is_external != true ?
+                            <span></span>
+                        :
+                            <h3><Link to={`${d.external_link}`} target="_blank">{d.title} Link</Link></h3>
+                        }
                     </div>
                 )
             })}
