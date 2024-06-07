@@ -26,6 +26,14 @@ a {
 .insetShadow {
   box-shadow: 0 0 1em 0.06em #00800071 inset;
 }
+.indigoInset {
+  box-shadow: 0 0 1em 0.06em #4c00827e inset;
+}
+.indigoShadow {
+  box-shadow: 0 0.25em 0.75em #4c00827e;
+  margin: 1em 0;
+  padding: 1em;
+}
 .redBlinking {
   -webkit-animation: blink 800ms step-end infinite;
   animation: blink 800ms step-end infinite;
@@ -118,7 +126,10 @@ body #root main .challCard .challs {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
+  box-shadow: 0 0 1em 0.06em #4c00827e inset;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 body #root main .challCard .challs .cards {
   display: flex;
@@ -128,6 +139,11 @@ body #root main .challCard .challs .cards {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
+}
+body #root main .challCard .challs .cards .card_box {
+  box-shadow: 0 0.25em 0.75em #4c00827e;
+  margin: 1em 0;
+  padding: 1em;
 }
 body #root main .projects {
   display: flex;
