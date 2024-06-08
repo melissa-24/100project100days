@@ -1,5 +1,5 @@
-@import 'spinner.css';
-@import 'gitCss.css';
+@import 'miscCSSFiles/spinner.css';
+@import 'miscCSSFiles/gitCss.css';
 .flexrow {
   display: flex;
   flex-direction: row;
@@ -206,4 +206,24 @@ body #root footer {
   box-shadow: 0 0.25em 0.75em #124c4c72;
   margin: 1em 0;
   padding: 1em;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.pagination button.active {
+  background-color: #0056b3;
 }

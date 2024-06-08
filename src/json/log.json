@@ -66,6 +66,12 @@
         "content": "To today is day 50 and what I have realized is I haven't been keeping up with this log for 1.  I am not even close to 50 project yet for 2. And I have more ideas or started projects than finished ones. So that needs to change. "
     },
     {
+        "day": "51",
+        "is_not_template": true,
+        "date": "6/8/24",
+        "content": "Came up with one new idea and revisited a very old project idea but adding it to this. Made more CSS updates yesterday. Added a new field to the project json of notes, not sure if I will display this or not, but this will serve as just that notes about the project like ideas of what I want to do outside of the title and description. Also added a dummyDB folder inside the json folder to serve as just that dummy database files so that any projects that are external and have a database I can give a rough example of what the real version will look like with some dummy data, this might also help in planning those external projects better by understanding how I want to organize things."
+    },
+    {
         "day": "",
         "is_not_template": false,
         "date": "",

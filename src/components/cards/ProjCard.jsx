@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Pagination from './Pagination';
 
 const ProjCard = ({ title, projects }) => {
 
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 3
   console.log('title', title, 'projects', projects)
 
   // {project.date_started !== "" ? (
@@ -13,12 +17,18 @@ const ProjCard = ({ title, projects }) => {
   // ) : (
   //   <h3>Not Started</h3>
   // )}
+
+  const totalPages = Math.ceil(projects.length / itemsPerPage)
+
+  const indexOfLastItem = currentPage * itemsPerPage
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage
+  const currentItems = projects.slice(indexOfFirstItem, indexOfLastItem)
   
   return (
     <>
     <h2>{ title }</h2>
     <div className="projects">
-      {projects.map(( project ) => {
+      {currentItems.map(( project ) => {
         return(
             <div id={ project.id } key={ project.id } className="proj_box">
                 <h3>Project Title: {project.title}</h3>
@@ -58,6 +68,11 @@ const ProjCard = ({ title, projects }) => {
         )
       })}
     </div>
+    <Pagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </>
   );
 };

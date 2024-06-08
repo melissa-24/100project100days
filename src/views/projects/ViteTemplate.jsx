@@ -1,16 +1,25 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { projFilterByContent } from "../../utils/ProjectHelper"
+import Pagination from '../../components/cards/Pagination'
 
 const ViteTemplate = () => {
-    // const data = projFilter("is_finished")
-    // console.log('is the helper working', data)
+    const [currentPage, setCurrentPage] = useState(1)
+    const itemsPerPage = 5
     const data = projFilterByContent("title")
-    console.log('is this helper working as well', data)
+    // console.log('is this helper working as well', data)
+
+    const totalPages = Math.ceil(data.length / itemsPerPage)
+    console.log('how many pages', totalPages, 'data.length', data.length)
+
+    const indexOfLastItem = currentPage * itemsPerPage
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage
+    const currentItems = data.slice(indexOfFirstItem, indexOfLastItem)
 
     return (
         <>
         <div className="projects">
-            {data.map(( d ) => {
+            {currentItems.map(( d ) => {
                 return(
                     <div id={d.id} key={d.id} className="proj_box">
                         <h2>Project #: {d.id}</h2>
@@ -30,7 +39,11 @@ const ViteTemplate = () => {
                 )
             })}
         </div>
-        
+        <Pagination 
+                totalPages={totalPages} 
+                currentPage={currentPage} 
+                setCurrentPage={setCurrentPage} 
+            />
         </>
     )
 }
