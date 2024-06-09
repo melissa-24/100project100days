@@ -1,4 +1,4 @@
-import '../../styles/cssImage.css'
+import '../../styles/miscCSSFiles/cssImage.css'
 
 const CssImage = () => {
 
