@@ -9,7 +9,6 @@ const Number = styled.span`
 
 const ChallengesVSCard = ({one, two, three, countOne, countTwo, countThree}) => {
 
-    console.log('params', one, two, three, countOne, countTwo, countThree)
     const countFour = countOne + countTwo
     const four = `${one} & ${two}`
 

@@ -5,18 +5,8 @@ import Pagination from './Pagination';
 const ProjCard = ({ title, projects }) => {
 
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 3
-  console.log('title', title, 'projects', projects)
+  const itemsPerPage = 4
 
-  // {project.date_started !== "" ? (
-  //   project.is_showable ? (
-  //     <h3>Start Date: {project.date_started}</h3>
-  //   ) : (
-  //     <h3>Project not showable</h3>
-  //   )
-  // ) : (
-  //   <h3>Not Started</h3>
-  // )}
 
   const totalPages = Math.ceil(projects.length / itemsPerPage)
 

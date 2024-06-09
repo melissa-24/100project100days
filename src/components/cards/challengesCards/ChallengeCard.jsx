@@ -1,19 +1,27 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Pagination from '../Pagination'
 import { filtered_length, is_length, source } from '../../../utils/ChallengeHelpers'
 
 
 const ChallengesCard = ({header, theChallenges}) => {
 
+    const [currentPage, setCurrentPage] = useState(1)
+    const itemsPerPage = 4
+
     console.log(header, theChallenges)
 
     const data = source(theChallenges, header)
-    console.log(data)
 
     const count = is_length(data)
     const jsSolved = filtered_length(data, "JavaScript")
     const pySolved = filtered_length(data, "Python")
 
-    // console.log('params', header, count, jsSolved, pySolved, theChallenges)
+    const totalPages = Math.ceil(data.length / itemsPerPage)
+
+    const indexOfLastItem = currentPage * itemsPerPage
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage
+    const currentItems = data.slice(indexOfFirstItem, indexOfLastItem)
 
     return (
         <>
@@ -34,7 +42,7 @@ const ChallengesCard = ({header, theChallenges}) => {
                     </tr>
                 </table>
                 <div className="cards">
-                    {data.map(( chall ) => {
+                    {currentItems.map(( chall ) => {
                         return(
                             <div id={ chall.id } key={ chall.id } className='card_box'>
                                 <h3>Challenge Title: { chall.challengeName }</h3>
@@ -49,6 +57,11 @@ const ChallengesCard = ({header, theChallenges}) => {
                         )
                     })}
                 </div>
+                <Pagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
             </div>
         </>
     )

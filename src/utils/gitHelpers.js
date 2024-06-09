@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { setCache, getCache } from './cacheHelper'
-// import { setCache, getCache } from './idbHelper';
 
 const GITHUB_API_URL = "https://api.github.com";
 const CACHE_TTL = 2 * 60 * 60 * 1000
@@ -15,17 +14,8 @@ const accounts = {
 // get repos from user
 const fetchRepositories = async (username) => {
 
-    // checking for cached data
-    // const cacheKey = `repos_${username}`;
-    // const cachedRepos = getCache(cacheKey);
-
-    // if (cachedRepos) {
-    //     return cachedRepos;
-    // }
-
     const token = accounts[username]
-    // console.log("token and user in fetch repo", username, token)
-    // console.log("FetchRepo Token:", token ? "Present" : "Missing");
+
     if (!token) {
         throw new Error(`Token for user ${username} is not set in get Repos`);
     }
@@ -46,11 +36,9 @@ const fetchRepositories = async (username) => {
         })
         fetchedRepos = response.data
         repos = repos.concat(fetchedRepos)
-        // console.log("response in fetchRepos", response, "repos in fetch repos", repos)
         page += 1
     } while (fetchedRepos.length === 100)
 
-    // setCache(cacheKey, repos, CACHE_TTL);
     
     return repos
 }
@@ -70,7 +58,6 @@ const fetchAllRepos = async (usernames) => {
         const userRepos = await fetchRepositories(username)
         combinedRepos = combinedRepos.concat(userRepos)
     }
-    // console.log("combined repo list", combinedRepos)
 
     setCache(cacheKey, combinedRepos, CACHE_TTL);
     return combinedRepos
@@ -79,17 +66,9 @@ const fetchAllRepos = async (usernames) => {
 // get commit data from one repo for a specific user
 const fetchRepoCommitByUser = async (username, repoName) => {
 
-    // setting cached
-    // const cacheKey = `commits_${username}_${repoName}`;
-    // const cachedCommits = getCache(cacheKey);
-
-    // if (cachedCommits) {
-    //     return cachedCommits;
-    // }
 
     const token = accounts[username]
-    // console.log("token and user in fetch repo commits", username, token)
-    // console.log("FetchRepoCommitUser Token:", token ? "Present" : "Missing");
+
     if (!token) {
         throw new Error(`Token for user ${username} is not set`);
     }
@@ -115,16 +94,13 @@ const fetchRepoCommitByUser = async (username, repoName) => {
         } while (fetchedCommits.length === 100);
     } catch (error) {
         if (error.response && error.response.status === 409) {
-            // console.error(`Conflict error (409) fetching commits for repo ${repoName}:`, error.response.data);
             // Handle 409 error specifically
             throw new Error(`Conflict error fetching commits for ${repoName}.`);
         } else {
-            // console.error(`Error fetching commits for repo ${repoName}:`, error.response ? error.response.data : error.message);
             throw error;
         }
     }
 
-    // setCache(cacheKey, userCommits, CACHE_TTL)
     return userCommits;
 };
 

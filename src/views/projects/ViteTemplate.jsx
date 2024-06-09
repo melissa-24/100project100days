@@ -7,10 +7,8 @@ const ViteTemplate = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const itemsPerPage = 5
     const data = projFilterByContent("title")
-    // console.log('is this helper working as well', data)
 
     const totalPages = Math.ceil(data.length / itemsPerPage)
-    console.log('how many pages', totalPages, 'data.length', data.length)
 
     const indexOfLastItem = currentPage * itemsPerPage
     const indexOfFirstItem = indexOfLastItem - itemsPerPage

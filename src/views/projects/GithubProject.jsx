@@ -9,7 +9,6 @@ import AllCommitCard from '../../components/cards/githubApiCards/AllCommitCard'
 const GithubProject = () => {
 
     const usernames = ['melissa-24', 'dojo24', 'beedevservices']
-    // const usernames = ['dojo24']
     const [allRepos, setAllRepos] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
@@ -20,7 +19,7 @@ const GithubProject = () => {
                 const combinedRepos = await fetchAllRepos(usernames)
                 setAllRepos(combinedRepos)
             } catch (err) {
-                // console.log("Error fetching combined repositories:", err.message);
+                console.log("Error fetching combined repositories:", err.message);
                 setError(err.message)
             } finally {
                 setLoading(false)
@@ -29,7 +28,6 @@ const GithubProject = () => {
         fetchCombinedRepos()
     }, [])
 
-    // console.log("allRepos in Project file",allRepos)
 
     if (loading) {
         return (

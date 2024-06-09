@@ -29,7 +29,6 @@ const Challenges = () => {
         })
     }, [])
 
-    console.log('data', data, 'loading', loading, 'error', error)
 
     if (loading) return <div>Loading ...</div>
     if (error) return <div>Error: {error.message}</div>

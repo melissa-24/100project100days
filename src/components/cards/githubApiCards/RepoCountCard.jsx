@@ -20,7 +20,6 @@ const RepoCountCard = ({ username }) => {
                 setIsPrivate(privateRepos)
                 setIsPublic(publicRepos)
                 const pubRep = repos.filter(repo => !repo.private)
-                // console.log("show public repo list", pubRep)
             } catch(err) {
                 setError(err.message)
             } finally {
@@ -46,7 +45,6 @@ const RepoCountCard = ({ username }) => {
     }
     if (error) return <div>Error: {error}</div>;
 
-    // console.log(`fetching for ${username}`,"data", data, "loading", loading, "error", error, "private count", isPrivate, "public count", isPublic)
 
     const count = data.length
 

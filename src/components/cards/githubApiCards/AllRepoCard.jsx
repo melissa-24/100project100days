@@ -1,7 +1,6 @@
 
 
 const AllReposCard = ({ allRepos }) => {
-    // console.log("what is allRepos", allRepos)
     const totalRepoCount = allRepos.length
 
 

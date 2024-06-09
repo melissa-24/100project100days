@@ -10,14 +10,12 @@ const CommitCountCard = ({ username }) => {
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        // console.log("commit useEffect triggered", username)
         const getCommits = async () => {
             try {
                 const commits = await fetchAllCommitsForUser(username)
                 setTheCommits(commits)
                 setCommitCount(commits.length)
             } catch (err) {
-                // console.error("Error fetching commits:", err.message);
                 setError(err.message)
             } finally {
                 setLoading(false)
@@ -42,7 +40,6 @@ const CommitCountCard = ({ username }) => {
     }
     if (error) return <div>Error: {error}</div>;
 
-    console.log("theCommits", theCommits, "commitCount", commitCount)
     return (
         <>
         <h3>Lifetime total commits: {commitCount}</h3>

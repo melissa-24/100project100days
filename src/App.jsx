@@ -22,6 +22,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/logs" element={<Logs />} />
+          <Route path="/projects" element={<ViteTemplate />} />
           <Route path="/projects/1" element={<ViteTemplate />} />
           <Route path="/projects/2" element={<Logs />} />
           <Route path="/projects/3" element={<BackgroundChanger />} />
