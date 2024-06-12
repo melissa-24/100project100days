@@ -1,9 +1,9 @@
 import { useState } from 'react';
-// import rockImg from '../../assets/rock.png';
-// import paperImg from '../../assets/paper.png';
-// import scissorsImg from '../../assets/scissors.png';
-// import lizardImg from '../../assets/lizard.png';
-// import spockImg from '../../assets/spock.png';
+import rockImg from '../../assets/rock.png';
+import paperImg from '../../assets/paper.png';
+import scissorsImg from '../../assets/scissors.png';
+import lizardImg from '../../assets/lizard.png';
+import spockImg from '../../assets/spock.png';
 
 const RockPaperScissorLizardSpock = () => {
 
@@ -15,11 +15,11 @@ const RockPaperScissorLizardSpock = () => {
     const [gamePlayed, setGamePlayed] = useState(false)
     const [p1Name, setP1Name] = useState('Guest')
 
-    const rockImg = import('../../assets/rock.png').default;
-    const paperImg = import('../../assets/paper.png').default;
-    const scissorsImg = import('../../assets/scissors.png').default;
-    const lizardImg = import('../../assets/lizard.png').default;
-    const spockImg = import('../../assets/spock.png').default;
+    // const rockImg = import('../../assets/rock.png').default;
+    // const paperImg = import('../../assets/paper.png').default;
+    // const scissorsImg = import('../../assets/scissors.png').default;
+    // const lizardImg = import('../../assets/lizard.png').default;
+    // const spockImg = import('../../assets/spock.png').default;
 
     const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
@@ -81,6 +81,16 @@ const RockPaperScissorLizardSpock = () => {
         setShowChoices(false);
         setGamePlayed(false);
     }
+    const getChoiceImage = (choice) => {
+        switch (choice) {
+            case 'Rock': return rockImg;
+            case 'Paper': return paperImg;
+            case 'Scissors': return scissorsImg;
+            case 'Lizard': return lizardImg;
+            case 'Spock': return spockImg;
+            default: return '';
+        }
+    };
 
     return (
         <>
@@ -93,7 +103,7 @@ const RockPaperScissorLizardSpock = () => {
                 <div className="playerButtons">
                     {choices.map((choice) => (
                         <button key={choice} onClick={() => handleChoice(1, choice)}>
-                            <img src={eval(`${choice.toLowerCase()}Img`)} alt={choice} />
+                            <img src={getChoiceImage(choice)} alt={choice} />
                         </button>
                     ))}
                 </div>
@@ -101,7 +111,7 @@ const RockPaperScissorLizardSpock = () => {
                     <div className="playerButtons">
                         {choices.map((choice) => (
                             <button key={choice} onClick={() => handleChoice(2, choice)}>
-                                <img src={eval(`${choice.toLowerCase()}Img`)} alt={choice} />
+                                <img src={getChoiceImage(choice)} alt={choice} />
                             </button>
                         ))}
                     </div>
@@ -112,11 +122,11 @@ const RockPaperScissorLizardSpock = () => {
                 <div className="displayChoice">
                     <div>
                         <h2>{p1Name}: {p1Choice}</h2>
-                        {p1Choice && <img src={eval(`${p1Choice.toLowerCase()}Img`)} alt={p1Choice} />}
+                        {p1Choice && <img src={getChoiceImage(p1Choice)} alt={p1Choice} />}
                     </div>
                     <div>
                         <h2>Player 2: {p2Choice}</h2>
-                        {p2Choice && <img src={eval(`${p2Choice.toLowerCase()}Img`)} alt={p2Choice} />}
+                        {p2Choice && <img src={getChoiceImage(p2Choice)} alt={p2Choice} />}
                     </div>
                 </div>
             )}
