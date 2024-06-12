@@ -10,6 +10,7 @@ const RockPaperScissorLizardSpock = () => {
     const [p1Choice, setP1Choice] = useState('');
   const [p2Choice, setP2Choice] = useState('');
   const [result, setResult] = useState('');
+  const [showChoices, setShowChoices] = useState(false);
   const [isPlayer2Computer, setIsPlayer2Computer] = useState(true);
 
   const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
@@ -41,6 +42,7 @@ const RockPaperScissorLizardSpock = () => {
       text = 'Player 2 won';
     }
     setResult(text);
+    setShowChoices(true)
   };
 
   const handlePlay = () => {
@@ -69,16 +71,18 @@ const RockPaperScissorLizardSpock = () => {
         ))}
       </div>
       <button onClick={handlePlay}>Duel</button>
-      <div className="displayChoice">
-        <div>
-          <h2>Player 1: {p1Choice}</h2>
-          {p1Choice && <img src={eval(`${p1Choice.toLowerCase()}Img`)} alt={p1Choice} />}
+      {showChoices && (
+        <div className="displayChoice">
+          <div>
+            <h2>Player 1: {p1Choice}</h2>
+            {p1Choice && <img src={eval(`${p1Choice.toLowerCase()}Img`)} alt={p1Choice} />}
+          </div>
+          <div>
+            <h2>Player 2: {p2Choice}</h2>
+            {p2Choice && <img src={eval(`${p2Choice.toLowerCase()}Img`)} alt={p2Choice} />}
+          </div>
         </div>
-        <div>
-          <h2>Player 2: {p2Choice}</h2>
-          {p2Choice && <img src={eval(`${p2Choice.toLowerCase()}Img`)} alt={p2Choice} />}
-        </div>
-      </div>
+      )}
       <div className="result">
         <h2>{result}</h2>
       </div>
