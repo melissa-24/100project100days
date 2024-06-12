@@ -1,4 +1,5 @@
 import projects from '../json/projects.json'
+import starTrek from '../json/dummyDB/starTrekNames.json'
 
 
 export const projFilter = (theFilter) => {
@@ -23,3 +24,9 @@ export const projContentLength = (key) => {
     const results = projFilterByContent(key).length
     return results
 }
+
+// const combinedData = [...crew1, ...crew2];
+
+// export const extractFieldFromData = (field) => {
+//     return combinedData.map(item => item[field]);
+// };
