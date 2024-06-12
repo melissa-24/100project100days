@@ -28,7 +28,16 @@ const NameModal = ({ isOpen, onClose }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        localStorage.setItem('userName', name);
+        // const expirationTime = new Date().getTime() + 6 * 60 * 60 * 1000; // 6 hours from now
+        // const expirationTime = new Date().getTime() + 1 * 60 * 60 * 1000; // 1 hour from now
+        // const expirationTime = new Date().getTime() + 30 * 60 * 1000; // 30 minutes from now
+        const expirationTime = new Date().getTime() + 5 * 60 * 1000; // 5 minutes from now
+
+        const userData = {
+            name,
+            expiration: expirationTime,
+        };
+        localStorage.setItem('userData', JSON.stringify(userData));
         onClose();
     };
 

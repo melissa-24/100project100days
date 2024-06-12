@@ -14,6 +14,7 @@ import CssImage from './views/projects/CssImage'
 import ImagesApi from './views/projects/ImagesApi'
 import GithubProject from './views/projects/GithubProject'
 import ViteTemplate from './views/projects/ViteTemplate'
+import RockPaperScissorLizardSpock from './views/projects/RockPaperScissorLizardSpock'
 
 function App() {
 
@@ -21,9 +22,15 @@ function App() {
     const [name, setName] = useState('')
 
     useEffect(() => {
-      const storedName = localStorage.getItem('userName');
-      if (storedName) {
-          setName(storedName);
+      const userData = localStorage.getItem('userData');
+      if (userData) {
+          const parsedData = JSON.parse(userData)
+          const currentTime = new Date().getTime()
+          if (parsedData.expiration > currentTime) {
+            setName(parsedData.name)
+          } else {
+            localStorage.removeItem('userData')
+          }
       }
   }, []);
 
@@ -32,9 +39,10 @@ function App() {
   };
 
   const closeModal = () => {
-      const storedName = localStorage.getItem('userName');
-      if (storedName) {
-          setName(storedName);
+      const userData = localStorage.getItem('userData');
+      if (userData) {
+          const parsedData = JSON.parse(userData)
+          setName(parsedData.name)
       }
       setIsModalOpen(false);
   };
@@ -63,6 +71,7 @@ function App() {
           <Route path="/projects/18" element={<Challenges />} />
           <Route path="/projects/19" element={< CssImage />} />
           <Route path="/projects/20" element={< GithubProject />} />
+          <Route path="/projects/26" element={<RockPaperScissorLizardSpock />} />
         </Routes>
       </main>
       <Footer />
