@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "rank": "Admiral",
+        "first_name": "James",
+        "last_name": "Kirk",
+        "full_name": "James T. Kirk",
+        "nick_name": "",
+        "version": ""
+    },
+    {
+        "id": 2,
+        "rank": "LCDR",
+        "first_name": "Leonard",
+        "last_name": "McCoy",
+        "full_name": "Leonard 'Bones' McCoy",
+        "nick_name": "Bones",
+        "version": ""
+    },
+    {
+        "id": 3,
+        "rank": "LT",
+        "first_name": "Nyota",
+        "last_name": "Uhura",
+        "full_name": "Nyota Uhura",
+        "nick_name": "Uhura",
+        "version": ""
+    },
+    {
+        "id": 4,
+        "rank": "LTJG",
+        "first_name": "Montgomery",
+        "last_name": "Scott",
+        "full_name": "Montgomery 'Scotty' Scott",
+        "nick_name": "Scotty",
+        "version": ""
+    },
+    {
+        "id": 5,
+        "rank": "Captain",
+        "first_name": "Jean-Luc",
+        "last_name": "Picard",
+        "full_name": "Jean-Luc Picard",
+        "nick_name": "",
+        "version": ""
+    },
+    {
+        "id": 6,
+        "rank": "LTCDR",
+        "first_name": "William",
+        "last_name": "Riker",
+        "full_name": "William Riker",
+        "nick_name": "#1",
+        "version": ""
+    }
+]

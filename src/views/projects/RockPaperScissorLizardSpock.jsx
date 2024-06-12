@@ -13,6 +13,7 @@ const RockPaperScissorLizardSpock = () => {
     const [showChoices, setShowChoices] = useState(false);
     const [isPlayer2Computer, setIsPlayer2Computer] = useState(true);
     const [gamePlayed, setGamePlayed] = useState(false)
+    const [p1Name, setP1Name] = useState('Guest')
 
     const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
@@ -25,6 +26,11 @@ const RockPaperScissorLizardSpock = () => {
     };
 
     const handlePlay = () => {
+        let player1Name = localStorage.getItem('userData') ? JSON.parse(localStorage.getItem('userData')).name : 'Guest';
+        setP1Name(player1Name)
+        if (player1Name === 'Guest') {
+            player1Name = 'Player 1';
+        }
         if (p1Choice) {
             if (isPlayer2Computer) {
                 const randomChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -33,10 +39,11 @@ const RockPaperScissorLizardSpock = () => {
             checkResult();
             setGamePlayed(true)
         } else {
-            alert('Player 1 needs to make a choice');
+            alert(`${player1Name} needs to make a choice`);
         }
     };
 
+    console.log(p1Name)
     const checkResult = () => {
         let text = '';
         if (p1Choice === p2Choice) {
@@ -48,7 +55,7 @@ const RockPaperScissorLizardSpock = () => {
             (p1Choice === 'Lizard' && (p2Choice === 'Paper' || p2Choice === 'Spock')) ||
             (p1Choice === 'Spock' && (p2Choice === 'Rock' || p2Choice === 'Scissors'))
         ) {
-            text = 'Player 1 won';
+            text = `${p1Name} won`;
         } else {
             text = 'Player 2 won';
         }
@@ -77,28 +84,28 @@ const RockPaperScissorLizardSpock = () => {
                 Player 2 is Computer
             </label>
             <div className="playerRow">
-            <div className="playerButtons">
-                {choices.map((choice) => (
-                    <button key={choice} onClick={() => handleChoice(1, choice)}>
-                        <img src={eval(`${choice.toLowerCase()}Img`)} alt={choice} />
-                    </button>
-                ))}
-            </div>
-            {!isPlayer2Computer && (
                 <div className="playerButtons">
                     {choices.map((choice) => (
-                        <button key={choice} onClick={() => handleChoice(2, choice)}>
+                        <button key={choice} onClick={() => handleChoice(1, choice)}>
                             <img src={eval(`${choice.toLowerCase()}Img`)} alt={choice} />
                         </button>
                     ))}
                 </div>
-            )}
+                {!isPlayer2Computer && (
+                    <div className="playerButtons">
+                        {choices.map((choice) => (
+                            <button key={choice} onClick={() => handleChoice(2, choice)}>
+                                <img src={eval(`${choice.toLowerCase()}Img`)} alt={choice} />
+                            </button>
+                        ))}
+                    </div>
+                )}
             </div>
             <button onClick={handlePlay}>Duel</button>
             {showChoices && (
                 <div className="displayChoice">
                     <div>
-                        <h2>Player 1: {p1Choice}</h2>
+                        <h2>{p1Name}: {p1Choice}</h2>
                         {p1Choice && <img src={eval(`${p1Choice.toLowerCase()}Img`)} alt={p1Choice} />}
                     </div>
                     <div>
