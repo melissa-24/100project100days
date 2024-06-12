@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import rockImg from '../../assets/rock.png';
-import paperImg from '../../assets/paper.png';
-import scissorsImg from '../../assets/scissors.png';
-import lizardImg from '../../assets/lizard.png';
-import spockImg from '../../assets/spock.png';
+// import rockImg from '../../assets/rock.png';
+// import paperImg from '../../assets/paper.png';
+// import scissorsImg from '../../assets/scissors.png';
+// import lizardImg from '../../assets/lizard.png';
+// import spockImg from '../../assets/spock.png';
 
 const RockPaperScissorLizardSpock = () => {
 
@@ -14,6 +14,12 @@ const RockPaperScissorLizardSpock = () => {
     const [isPlayer2Computer, setIsPlayer2Computer] = useState(true);
     const [gamePlayed, setGamePlayed] = useState(false)
     const [p1Name, setP1Name] = useState('Guest')
+
+    const rockImg = import('../../assets/rock.png').default;
+    const paperImg = import('../../assets/paper.png').default;
+    const scissorsImg = import('../../assets/scissors.png').default;
+    const lizardImg = import('../../assets/lizard.png').default;
+    const spockImg = import('../../assets/spock.png').default;
 
     const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
