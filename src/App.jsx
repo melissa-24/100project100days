@@ -1,5 +1,8 @@
+import { useState, useEffect } from 'react'
 import {Routes, Route} from 'react-router-dom'
 import './styles/style.css'
+import NameModal from './components/NameModal'
+import Greeting from './components/Greeting'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './views/Home'
@@ -14,10 +17,39 @@ import ViteTemplate from './views/projects/ViteTemplate'
 
 function App() {
 
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const [name, setName] = useState('')
+
+    useEffect(() => {
+      const storedName = localStorage.getItem('userName');
+      if (storedName) {
+          setName(storedName);
+      }
+  }, []);
+
+  const openModal = () => {
+      setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+      const storedName = localStorage.getItem('userName');
+      if (storedName) {
+          setName(storedName);
+      }
+      setIsModalOpen(false);
+  };
+
 
   return (
     <>
       <Header />
+      <main>
+        <Greeting name={name} />
+        <button className='modal_button' onClick={openModal}>
+          {name ? 'Change Name' : 'Personalize Experience'}
+        </button>
+        <NameModal isOpen={isModalOpen} onClose={closeModal} />
+      </main>
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />

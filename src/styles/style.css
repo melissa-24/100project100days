@@ -34,6 +34,12 @@ a {
   margin: 1em 0;
   padding: 1em;
 }
+.modal_button {
+  box-shadow: 0 0.25em 0.75em #ff000075;
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #ffc0cb44;
+}
 .redBlinking {
   -webkit-animation: blink 800ms step-end infinite;
   animation: blink 800ms step-end infinite;
@@ -72,6 +78,15 @@ body {
   align-items: center;
   width: 99%;
   background-color: #cfcdcd;
+}
+body .modal_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .modal_form label {
+  padding: 0.5em;
 }
 body #root {
   display: flex;
