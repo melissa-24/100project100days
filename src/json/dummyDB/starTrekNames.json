@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "rank": "Admiral",
+        "rank": "CAPT",
         "first_name": "James",
         "last_name": "Kirk",
         "full_name": "James T. Kirk",
-        "nick_name": "",
-        "version": ""
+        "nick_name": "Jim",
+        "version": "Original"
     },
     {
         "id": 2,
@@ -52,5 +52,14 @@
         "full_name": "William Riker",
         "nick_name": "#1",
         "version": ""
+    },
+    {
+        "id": 7,
+        "rank": "CMDR",
+        "first_name": "Spock",
+        "last_name": "",
+        "full_name": "Spock",
+        "nick_name": "Spock",
+        "version": "Original"
     }
 ]

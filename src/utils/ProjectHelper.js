@@ -25,8 +25,8 @@ export const projContentLength = (key) => {
     return results
 }
 
-// const combinedData = [...crew1, ...crew2];
+const combinedData = [...starTrek];
 
-// export const extractFieldFromData = (field) => {
-//     return combinedData.map(item => item[field]);
-// };
+export const extractFieldFromData = (field) => {
+    return combinedData.map(item => item[field]);
+};

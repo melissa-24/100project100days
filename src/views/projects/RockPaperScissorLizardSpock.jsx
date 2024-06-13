@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { extractFieldFromData } from '../../utils/ProjectHelper'
 import rockImg from '../../assets/rock.png';
 import paperImg from '../../assets/paper.png';
 import scissorsImg from '../../assets/scissors.png';
@@ -14,18 +15,17 @@ const RockPaperScissorLizardSpock = () => {
     const [isPlayer2Computer, setIsPlayer2Computer] = useState(true);
     const [gamePlayed, setGamePlayed] = useState(false)
     const [p1Name, setP1Name] = useState('Guest')
-
-    // const rockImg = import('../../assets/rock.png').default;
-    // const paperImg = import('../../assets/paper.png').default;
-    // const scissorsImg = import('../../assets/scissors.png').default;
-    // const lizardImg = import('../../assets/lizard.png').default;
-    // const spockImg = import('../../assets/spock.png').default;
+    const [p2Name, setP2Name] = useState('')
 
     const choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
+
+    const player2Names = extractFieldFromData('full_name')
+    const randomName = player2Names[Math.floor(Math.random() * player2Names.length)]
 
     const handleChoice = (player, choice) => {
         if (player === 1) {
             setP1Choice(choice);
+            setP2Name(randomName)
         } else {
             setP2Choice(choice);
         }
@@ -49,7 +49,7 @@ const RockPaperScissorLizardSpock = () => {
         }
     };
 
-    console.log(p1Name)
+    console.log(p1Name, p2Name)
     const checkResult = () => {
         let text = '';
         if (p1Choice === p2Choice) {
@@ -63,7 +63,7 @@ const RockPaperScissorLizardSpock = () => {
         ) {
             text = `${p1Name} won`;
         } else {
-            text = 'Player 2 won';
+            text = `${p2Name} won`;
         }
         setResult(text);
         setShowChoices(true);
@@ -71,7 +71,8 @@ const RockPaperScissorLizardSpock = () => {
 
     const handleToggle = () => {
         setIsPlayer2Computer(!isPlayer2Computer);
-        setP2Choice(''); // Reset Player 2 choice when toggling
+        setP2Choice('');
+        // setP2Name('')
     };
 
     const handleReset = () => {
@@ -80,6 +81,7 @@ const RockPaperScissorLizardSpock = () => {
         setResult('');
         setShowChoices(false);
         setGamePlayed(false);
+        setP2Name('')
     }
     const getChoiceImage = (choice) => {
         switch (choice) {
@@ -121,11 +123,11 @@ const RockPaperScissorLizardSpock = () => {
             {showChoices && (
                 <div className="displayChoice">
                     <div>
-                        <h2>{p1Name}: {p1Choice}</h2>
+                        <h2>You, {p1Name} Chose: {p1Choice}</h2>
                         {p1Choice && <img src={getChoiceImage(p1Choice)} alt={p1Choice} />}
                     </div>
                     <div>
-                        <h2>Player 2: {p2Choice}</h2>
+                        <h2>Player 2 {p2Name} Chose: {p2Choice}</h2>
                         {p2Choice && <img src={getChoiceImage(p2Choice)} alt={p2Choice} />}
                     </div>
                 </div>
