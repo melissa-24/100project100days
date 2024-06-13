@@ -72,6 +72,12 @@
         "content": "Came up with one new idea and revisited a very old project idea but adding it to this. Made more CSS updates yesterday. Added a new field to the project json of notes, not sure if I will display this or not, but this will serve as just that notes about the project like ideas of what I want to do outside of the title and description. Also added a dummyDB folder inside the json folder to serve as just that dummy database files so that any projects that are external and have a database I can give a rough example of what the real version will look like with some dummy data, this might also help in planning those external projects better by understanding how I want to organize things."
     },
     {
+        "day": "56",
+        "is_not_template": true,
+        "date": "June 13th, 2024",
+        "content": "So I have decided that for certain projects such as the log one although things might get added like new entries or updating CSS or maybe a new feature that if the original idea is reached I can call it finished.  Other wise some may never be finished."
+    },
+    {
         "day": "",
         "is_not_template": false,
         "date": "",

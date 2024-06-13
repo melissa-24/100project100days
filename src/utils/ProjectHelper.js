@@ -1,5 +1,5 @@
 import projects from '../json/projects.json'
-import starTrek from '../json/dummyDB/starTrekNames.json'
+import starTrek from '../json/showDB/starTrekNames.json'
 
 
 export const projFilter = (theFilter) => {
