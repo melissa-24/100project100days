@@ -15,6 +15,7 @@ import ImagesApi from './views/projects/ImagesApi'
 import GithubProject from './views/projects/GithubProject'
 import ViteTemplate from './views/projects/ViteTemplate'
 import RockPaperScissorLizardSpock from './views/projects/RockPaperScissorLizardSpock'
+import MadLib from './views/projects/MadLib'
 
 function App() {
 
@@ -72,6 +73,7 @@ function App() {
           <Route path="/projects/19" element={< CssImage />} />
           <Route path="/projects/20" element={< GithubProject />} />
           <Route path="/projects/26" element={<RockPaperScissorLizardSpock />} />
+          <Route path="projects/28" element={<MadLib/>} />
         </Routes>
       </main>
       <Footer />
