@@ -637,7 +637,7 @@
         "is_new": false,
         "title": "Opening credits clones",
         "description": "Like another project I did the opening credits to Star Wars I am going to redo that and also add in the opening credits to Superman.",
-        "notes": "https://codepen.io/kevinnewcombe/full/aEwNjB - superman example (my fork - https://codepen.io/WolfsVeteran/pen/ZENxVrz), https://coding-train-may-the-4th.vercel.app/ - my origional starwars opening, https://coding-train-may-the-4th-pages.vercel.app/ - an updated version of the star wars.  I think I want to add customization to this one... have defaults like what I want them to say but also give the user the option to 1 use local storage for their name for the superman one and then input a paragraph for the starwars one.",
+        "notes": "https://codepen.io/kevinnewcombe/full/aEwNjB - superman example (my fork - https://codepen.io/WolfsVeteran/pen/ZENxVrz), https://coding-train-may-the-4th.vercel.app/ - my original starwars opening, https://coding-train-may-the-4th-pages.vercel.app/ - an updated version of the star wars.  I think I want to add customization to this one... have defaults like what I want them to say but also give the user the option to 1 use local storage for their name for the superman one and then input a paragraph for the starwars one.",
         "date_started": "",
         "date_finished": "",
         "img_link": "",
