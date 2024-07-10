@@ -78,6 +78,12 @@
         "content": "So I have decided that for certain projects such as the log one although things might get added like new entries or updating CSS or maybe a new feature that if the original idea is reached I can call it finished.  Other wise some may never be finished."
     },
     {
+        "day": "83",
+        "is_not_template": true,
+        "date": "July 10th, 2024",
+        "content": "Finally getting back into this again.  Added some small updates to the challenges project. Although technically I have been working on this.. but just not the code.  Been working on my http status code images. Have almost all of the base images created been working on making them transparent and adding a frame too."
+    },
+    {
         "day": "",
         "is_not_template": false,
         "date": "",

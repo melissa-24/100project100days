@@ -46,12 +46,18 @@ const ChallengesCard = ({header, theChallenges}) => {
                         return(
                             <div id={ chall.id } key={ chall.id } className='card_box'>
                                 <h3>Challenge Title: { chall.challengeName }</h3>
+                                <p>(Link to Source Challenge - <a href={chall.challengeSourceLink} target="_blank">{chall.source}</a>)</p>
                                 <h3>Language Used: { chall.languageSolved }</h3>
                                 <h3>Date Solved: { chall.dateSolved }</h3>
                                 {chall.group_solved == true ?
-                                    <h3>Solved with other Developers</h3>
+                                    <span>
+                                        <h3>Solved with other Developers</h3>
+                                        <p><a href={chall.groupSolvedLink}>Group Solution Code</a></p>
+                                    </span>
                                 :
-                                    <span></span>
+                                    <span>
+                                        <p><a href={chall.challengeSolvedLink}>Solution Code</a></p>
+                                        </span>
                                 }
                             </div>
                         )
