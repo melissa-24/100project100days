@@ -3,7 +3,7 @@ import axios from 'axios'
 const BASE_URL = 'https://ninja-api.navyladyveteran.com/api/'
 const CHALLENGES_JSON = 'https://raw.githubusercontent.com/'
 const GIT_BASE_URL = 'https://api.github.com'
-const HTTP_STATUS_URL='https://status-code.navyladyveteran.com'
+const HTTP_STATUS_URL='https://httphive.com'
 
 const ENDPOINTS = {
     getCategories: '/categories',
