@@ -58,8 +58,8 @@
     },
     {
         "id": "4",
-        "is_finished": false,
-        "is_started": true,
+        "is_finished": true,
+        "is_started": false,
         "is_idea": false,
         "is_external": true,
         "framework_chosen": true,
@@ -69,11 +69,11 @@
         "description": "Images with Bee's (of course) depicting different HTTP Status Codes",
         "notes": "Images created",
         "date_started": "July 10th, 2024",
-        "date_finished": "",
+        "date_finished": "July 12th, 2024",
         "img_link": "",
         "last_updated": "July 11th, 2024",
         "framework_used": "Express/Pug",
-        "external_link": "https://status-code.navyladyveteran.com"
+        "external_link": "https://httphive.com"
     },
     {
         "id": "5",
