@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Home from './views/Home'
 import Logs from './views/Log'
 import BackgroundChanger from './views/projects/BackgroundChanger'
+import HttpStatusCode from './views/projects/StatusCodes'
 import ImportantDates from './views/projects/ImportantDates'
 import Challenges from './views/projects/Challenges'
 import CssImage from './views/projects/CssImage'
@@ -67,6 +68,7 @@ function App() {
           <Route path="/projects/1" element={<ViteTemplate />} />
           <Route path="/projects/2" element={<Logs />} />
           <Route path="/projects/3" element={<BackgroundChanger />} />
+          <Route path="/projects/4" element={<HttpStatusCode />} />
           <Route path="/projects/5" element={<ImagesApi />} />
           <Route path="/projects/9" element={<ImportantDates />} />
           <Route path="/projects/18" element={<Challenges />} />

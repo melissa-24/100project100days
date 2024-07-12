@@ -7,6 +7,14 @@ body {
     // background-image: url(${backgroundImage});
     // background: linear-gradient(49deg, @bg 20%, @altbg 50%, @bg 80%);
     // color: @yellow;
+
+    .modal_details {
+        .flexcolumn();
+    }
+    .codeClose {
+        padding: .5em 2em;
+        font-size: 1.1em;
+    }
     .modal_form {
         .flexcolumn();
 
@@ -42,6 +50,19 @@ body {
             width: 95%;
             .boxShadow();
 
+            .codes {
+                .flexrow();
+                flex-wrap: wrap;
+
+                .statusCodes {
+                    .flexcolumn();
+                    
+    
+                    img {
+                        max-width: 150px;
+                    }
+                }
+            }
 
             .challCard {
                 .flexcolumn();
