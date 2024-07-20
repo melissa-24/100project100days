@@ -1,0 +1,65 @@
+img {
+  max-width: 100px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff33;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.square img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.modal-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
