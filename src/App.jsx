@@ -18,6 +18,7 @@ import TicTacToe from './views/projects/TicTacToe'
 import ViteTemplate from './views/projects/ViteTemplate'
 import RockPaperScissorLizardSpock from './views/projects/RockPaperScissorLizardSpock'
 import MadLib from './views/projects/MadLib'
+import JSConsoleExamples from './views/projects/JSConsoleExamples'
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
           <Route path="/projects/25" element={<TicTacToe />} />
           <Route path="/projects/26" element={<RockPaperScissorLizardSpock />} />
           <Route path="projects/28" element={<MadLib/>} />
+          <Route path="projects/35" element={<JSConsoleExamples />}/>
         </Routes>
       </main>
       <Footer />
