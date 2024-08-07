@@ -52,11 +52,11 @@ const ChallengesCard = ({header, theChallenges}) => {
                                 {chall.group_solved == true ?
                                     <span>
                                         <h3>Solved with other Developers</h3>
-                                        <p><a href={chall.groupSolvedLink}>Group Solution Code</a></p>
+                                        <p><a href={chall.groupSolvedLink}target="_blank">Group Solution Code</a></p>
                                     </span>
                                 :
                                     <span>
-                                        <p><a href={chall.challengeSolvedLink}>Solution Code</a></p>
+                                        <p><a href={chall.challengeSolvedLink}target="_blank">Solution Code</a></p>
                                         </span>
                                 }
                             </div>

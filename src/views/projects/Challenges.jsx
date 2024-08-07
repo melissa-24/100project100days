@@ -12,6 +12,7 @@ const Challenges = () => {
     const hr = "HackerRank"
     const lc = "LeetCode"
     const misc = "Misc"
+    const coc = "Clash of Code"
 
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
@@ -49,6 +50,7 @@ const Challenges = () => {
             <ChallengesCard header={cw} theChallenges={solved} />
             <ChallengesCard header={hr} theChallenges={solved} />
             <ChallengesCard header={lc} theChallenges={solved} />
+            <ChallengesCard header={coc} theChallenges={solved} />
             <ChallengesCard header={misc} theChallenges={solved} />
         </div>
         </>
