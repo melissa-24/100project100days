@@ -3,7 +3,7 @@
         "id": "1",
         "title": "Star Trek",
         "category": "Entertainment",
-        "story": "Captain {name} and the crew of the USS {ship name} set out on a mission to explore {adjective1} space. Along the way, they encounter a group of {plural noun} who are in need of assistance. The crew must use their {adjective2} skills and quick thinking to help the {plural noun} and continue their journey through the stars",
+        "story": "Captain {Name} and the crew of the USS {ship name} set out on a mission to explore {adjective1} space. Along the way, they encounter a group of {plural noun1} who are in need of assistance. The crew must use their {adjective2} skills and quick thinking to help the {plural noun2} and continue their journey through the stars",
         "is_template": false
     },
     {

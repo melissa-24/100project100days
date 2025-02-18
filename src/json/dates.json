@@ -18,7 +18,7 @@
         "is_future": false,
         "is_template": false,
         "category": "Birthday",
-        "name": "Ken Payne SR",
+        "name": "Ken Payne JR",
         "couple": "",
         "title": "Ken was born",
         "description": ""
@@ -61,18 +61,6 @@
     },
     {
         "id": "",
-        "date": "10/07/1982",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Birthday",
-        "name": "Nicholas Longenberger",
-        "couple": "",
-        "title": "Nicholas was born",
-        "description": ""
-    },
-    {
-        "id": "",
         "date": "12/16/2002",
         "alt_date": "",
         "is_future": false,
@@ -97,18 +85,6 @@
     },
     {
         "id": "",
-        "date": "08/08/2008",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Birthday",
-        "name": "Hayden Longenberger",
-        "couple": "",
-        "title": "Hayden was born ",
-        "description": ""
-    },
-    {
-        "id": "",
         "date": "04/17/1976",
         "alt_date": "",
         "is_future": false,
@@ -117,30 +93,6 @@
         "name": "",
         "couple": "Ken & Debby Payne",
         "title": "Ken & Debby were married",
-        "description": ""
-    },
-    {
-        "id": "",
-        "date": "",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Anniversary",
-        "name": "",
-        "couple": "Richard & Tammi Longenberger",
-        "title": "Richard & Tammi were married",
-        "description": ""
-    },
-    {
-        "id": "",
-        "date": "05/30/2018",
-        "alt_date": "",
-        "is_future": false,
-        "is_template": false,
-        "category": "Anniversary",
-        "name": "",
-        "couple": "Nicholas & Melissa Longenberger",
-        "title": "Nick and Melissa were married",
         "description": ""
     },
     {
