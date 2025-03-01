@@ -90,6 +90,12 @@
         "content": "Been a while since I updatd the site but I did some cosmetic updates today.  Mostly updating or removing things I no longer want to be part of this."
     },
     {
+        "day": "316",
+        "is_not_template": true,
+        "date": "February 28th, 2025",
+        "content": "Added a new project - Nasa photo of the day.  Started and finished it as well.  Glad I remembered how to add to the api helper file."
+    },
+    {
         "day": "",
         "is_not_template": false,
         "date": "",
