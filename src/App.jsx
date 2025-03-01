@@ -19,6 +19,7 @@ import ViteTemplate from './views/projects/ViteTemplate'
 import RockPaperScissorLizardSpock from './views/projects/RockPaperScissorLizardSpock'
 import MadLib from './views/projects/MadLib'
 import JSConsoleExamples from './views/projects/JSConsoleExamples'
+import NasaImageOfDay from './views/projects/NasaImageOfDay'
 
 function App() {
 
@@ -80,6 +81,7 @@ function App() {
           <Route path="/projects/26" element={<RockPaperScissorLizardSpock />} />
           <Route path="projects/28" element={<MadLib/>} />
           <Route path="projects/35" element={<JSConsoleExamples />}/>
+          <Route path="projects/36" element={<NasaImageOfDay />}/>
         </Routes>
       </main>
       <Footer />
